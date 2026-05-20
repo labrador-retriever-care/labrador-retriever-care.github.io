@@ -1,0 +1,28 @@
+{
+  "site_name": "Labrador Retriever Care",
+  "site_url": "https://labrador-retriever-care.github.io",
+  "niche": "Labrador Retrievers",
+  "brand_voice": "Informative, reliable, slightly scientific — evidence-based lab care with a practical focus",
+  "editorial_voice": "Methodical and clear — we cite what's known, flag what's uncertain, and avoid overstating claims",
+  "primary_author_label": "Lab Care Research Team",
+  "reviewer_label": "Lab Care Editorial Review",
+  "update_owner_label": "Lab Care Research Team",
+  "about_title": "About Our Research",
+  "editorial_policy_title": "Content Principles",
+  "disclosure_title": "Transparency Note",
+  "ai_assistance_disclosure": "Lab Care Research Team uses AI tools for source aggregation and first-draft outlines. All claims are reviewed by our editorial team against current breed health literature before publication.",
+  "article_eeat_block_variants": [
+    "<div style=\"border-left:4px solid #5b21b6;background:#f5f3ff;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#5b21b6;\">Lab Care Research Team</strong> — Reviewed for accuracy. We distinguish between established evidence and general owner consensus in our guides.</p></div>",
+    "<div style=\"border-left:4px solid #5b21b6;background:#f5f3ff;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#5b21b6;\">Evidence-Based Coverage:</strong> Labrador Retriever Care prioritizes verifiable information. Where evidence is limited, we say so rather than speculate.</p></div>",
+    "<div style=\"border:1px solid #c4b5fd;background:#faf9ff;padding:14px 18px;margin:24px 0;border-radius:6px;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#5b21b6;\">Reviewed Content:</strong> This article was reviewed by the Lab Care Research Team. Breed-specific health data (especially regarding bloat and joint concerns) is handled with particular care.</p></div>",
+    "<div style=\"background:#5b21b6;color:#fff;padding:14px 18px;margin:24px 0;border-radius:6px;\"><p style=\"margin:0;font-size:0.93rem;\"><strong>Research Note:</strong> Labrador Retriever Care updates guides as new information becomes available. Questions or corrections? <a href=\"/contact.html\" style=\"color:#ddd;\">Reach out here</a>.</p></div>",
+    "<div style=\"border-top:2px solid #5b21b6;padding-top:12px;margin:24px 0;\"><p style=\"font-size:0.88rem;color:#6b7280;margin:0;\">Published by <strong style=\"color:#5b21b6;\">Lab Care Research Team</strong>. We cover Labrador nutrition, bloat prevention, joint health, and the science behind evidence-based breed care.</p></div>"
+  ],
+  "disclosure_variants": [
+    "Labrador Retriever Care may earn affiliate commissions through Amazon product links. This does not affect our editorial independence.",
+    "Some links in our guides are affiliate links. We earn a commission if you purchase through them — you pay no more than the standard price.",
+    "This site uses affiliate links to support content production. Revenue from commissions does not influence which topics we cover or what we recommend.",
+    "Lab Care Research Team operates independently. Affiliate income from product links helps fund the site but plays no role in content decisions.",
+    "When a purchase is made through one of our product links, we may receive a referral commission from Amazon. Your price remains unchanged."
+  ]
+}
