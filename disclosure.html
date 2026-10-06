@@ -3,78 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-@media (max-width:700px){
-  .layout-row{flex-direction:column!important;}
-  .layout-row aside{display:none!important;}
-  header nav{gap:8px!important;font-size:0.82rem!important;}
-  header div{flex-wrap:wrap!important;}
-}
-
-  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
-  .article-breadcrumb a { color: #6b7280; }
-  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
-
-</style>
-<title>Transparency Note — Labrador Retriever Care</title>
-<meta name="description" content="Labrador Retriever Care's transparency note on affiliate links, how income is earned, and the separation of commercial and editorial functions.">
+<title>Disclosure | Labrador Retriever Guide</title>
+<link rel="canonical" href="https://labrador-retriever-care.github.io/disclosure.html">
+<meta name="description" content="Disclosure: AI assistance and affiliate links on Labrador Retriever Guide.">
 <meta name="robots" content="index, follow">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Palatino Linotype', 'Book Antiqua', serif; background: #f6f6f7; color: #1f2937; line-height: 1.75; }
+  a { color: #5b21b6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .topbar { background: #5b21b6; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+  .brand { color: #fff; font-size: 1.08rem; font-weight: 700; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; }
+  .breadcrumb { background: #fff; border-bottom: 1px solid #e5e7eb; }
+  .breadcrumb-inner { max-width: 1120px; margin: 0 auto; padding: 10px 22px 0; color: #6b7280; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .breadcrumb a { color: #6b7280; }
+  .breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+  .wrap { max-width: 1120px; margin: 28px auto; padding: 0 22px 40px; }
+  .panel { background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  h1 { color: #46198d; font-size: 2rem; margin-bottom: 10px; }
+  h2 { color: #46198d; font-size: 1.3rem; margin: 24px 0 10px; }
+  p, li { color: #4b5563; }
+  ul { padding-left: 20px; margin: 12px 0; }
+  .intro { font-size: 1rem; margin-bottom: 18px; }
+  .footer { background: #46198d; color: rgba(255,255,255,0.75); margin-top: 32px; }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 18px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+</style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #5b21b6;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #481a91;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
+<style id="sc-font">body{font-family:'Palatino Linotype', 'Book Antiqua', serif}body h1,body h2,body h3{font-family:'Palatino Linotype', 'Book Antiqua', serif}</style>
 </head>
-<body style="font-family:'Palatino Linotype','Book Antiqua',serif;background:#f6f6f7;color:#1f2937;line-height:1.75;margin:0;padding:0;">
-<header style="background:#5b21b6;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.14);">
-  <div style="max-width:1040px;margin:0 auto;padding:14px 22px;display:flex;justify-content:space-between;gap:16px;align-items:center;">
-    <a href="/" style="color:#fff;font-size:1.08rem;font-weight:700;text-decoration:none;">Labrador Retriever Care</a>
-    <nav style="display:flex;gap:14px;flex-wrap:wrap;">
-      <a href="/" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Home</a>
-      <a href="/blog.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Blog</a>
-      <a href="/care.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Care</a>
-      <a href="/about.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">About</a>
-      <a href="/contact.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Contact</a>
-      <a href="/sitemap.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Sitemap</a>
+<body>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Labrador Retriever Guide</a>
+    <nav>
+      <ul class="sc-topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
     </nav>
   </div>
 </header>
-<nav aria-label="Breadcrumb" style="background:#fff;border-bottom:1px solid #e5e7eb;">
-  <div style="max-width:1040px;margin:0 auto;padding:10px 22px;color:#6b7280;font-size:0.88rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-    <a href="/" style="color:#6b7280;text-decoration:none;">Home</a>
-    <span>&#8250;</span>
-    <span style="color:#374151;font-weight:600;" aria-current="page">Transparency Note</span>
-  </div>
-</nav>
-<div style="max-width:1040px;margin:28px auto;padding:0 22px 40px;">
-  <article style="background:#fff;border-radius:10px;padding:32px;box-shadow:0 1px 6px rgba(0,0,0,0.08);">
-    <h1 style="color:#46198d;font-size:2rem;margin:0 0 10px;">Transparency Note</h1>
-    <p style="font-size:1.05rem;color:#4b5563;margin:0 0 18px;">Labrador Retriever Care operates under a clear separation between its editorial function and its commercial function. This note documents how that separation works and what income is earned through this site.</p>
 
-    <h2 style="color:#46198d;font-size:1.3rem;margin:28px 0 10px;">Affiliate Income</h2>
-    <p style="color:#4b5563;">This site participates in the Amazon Services LLC Associates Program. Certain product links within our guides direct visitors to Amazon. If a qualifying purchase is made after following one of these links, Labrador Retriever Care receives a commission from Amazon. This commission is a small percentage of the transaction value and is paid by Amazon — it does not affect the price charged to the buyer.</p>
 
-    <h2 style="color:#46198d;font-size:1.3rem;margin:28px 0 10px;">Research Team Independence</h2>
-    <p style="color:#4b5563;">The Lab Care Research Team makes all editorial decisions — including which topics to cover, which products to mention, and what claims to make — without regard to affiliate revenue implications. A topic that generates no affiliate income receives the same editorial attention as one that does. A product that is important for Lab owners is mentioned regardless of whether an affiliate link is available.</p>
-    <p style="color:#4b5563;">No brand has a paid relationship with Labrador Retriever Care. No manufacturer pays to have their products included in, excluded from, or positively described in our guides. The Research Team's positions are earned through accuracy, not purchased.</p>
 
-    <h2 style="color:#46198d;font-size:1.3rem;margin:28px 0 10px;">Legal Notice</h2>
-    <p style="color:#4b5563;">This disclosure satisfies the requirements of 16 CFR Part 255 (Federal Trade Commission guidelines on endorsements). Labrador Retriever Care is a participant in the Amazon Associates Programme. As an Amazon Associate, this site earns from qualifying purchases.</p>
 
-    <h2 style="color:#46198d;font-size:1.3rem;margin:28px 0 10px;">No Paid Content</h2>
-    <p style="color:#4b5563;">Labrador Retriever Care does not accept payment for editorial coverage. There are no sponsored posts, advertorials, or paid product placements on this site. Every guide is produced under the sole editorial authority of the Lab Care Research Team and meets the <a href="/editorial-policy.html" style="color:#5b21b6;text-decoration:none;">Content Principles</a> described separately.</p>
-
-    <p style="color:#6b7280;font-size:0.88rem;margin-top:28px;padding-top:16px;border-top:1px solid #e5e7eb;">Questions: <strong>hello@labrador-retriever-care.github.io</strong></p>
-  </article>
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="breadcrumb-inner" style="max-width:1120px;"><a href="/">Home</a><span>›</span><span aria-current="page">Disclosure</span></div></nav>
+<div class="wrap">
+  <section class="panel">
+<h1>Disclosure</h1>
+<p>Some content on this site is drafted with AI tools and then checked for facts and sources before publishing.</p><p>Labrador Retriever Care may earn affiliate commissions through Amazon product links. This does not affect our editorial independence. Affiliate links, where used, are marked next to the link and don't change what we recommend.</p>
+</section>
 </div>
-<footer style="background:#46198d;color:rgba(255,255,255,0.75);margin-top:32px;">
-  <div style="max-width:1040px;margin:0 auto;padding:18px 22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-    <p>Labrador Retriever Care</p>
-    <p>
-      <a href="/privacy.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Privacy</a>
-      <span style="opacity:0.55;"> | </span>
-      <a href="/editorial-policy.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Content Principles</a>
-      <span style="opacity:0.55;"> | </span>
-      <a href="/contact.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Contact</a>
-      <span style="opacity:0.55;"> | </span>
-      <a href="/sitemap.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Sitemap</a>
-    </p>
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
   </div>
+  <p>&copy; 2026 labrador-retriever-care.github.io &mdash; Labrador Retriever Guide. All rights reserved.</p>
 </footer>
 </body>
 </html>
