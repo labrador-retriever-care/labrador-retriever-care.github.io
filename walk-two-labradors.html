@@ -283,6 +283,43 @@ header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{dis
 .sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
 </style>
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="How to Walk Two Labradors: Leashes and Training">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://labrador-retriever-care.github.io/walk-two-labradors.html">
+<meta property="og:description" content="Learn how to walk two Labradors at once: compare couplers, separate leashes and waist setups, then build paired walking skills with a practical training plan.">
+<meta property="og:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Walk Two Labradors: Leashes and Training">
+<meta name="twitter:description" content="Learn how to walk two Labradors at once: compare couplers, separate leashes and waist setups, then build paired walking skills with a practical training plan.">
+<meta name="twitter:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<!-- social-cards:end -->
 </head>
 <body>
 <header class="sc-topbar">
@@ -306,7 +343,7 @@ header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{dis
 
 <div class="hero">
 <div class="hero-inner"><p class="eyebrow">Labrador Retriever owner notes</p><h1>How to Walk Two Labradors at Once: Setups and Training Steps</h1><p>Separate skills, shared cues, and a setup chosen for the task.</p></div></div>
-<div class="layout">
+<div class="layout" data-follow-parent="true">
   <article class="article">
 <nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">Walking Two Labradors</span></nav>
 <p class="meta">By Lab Care Research Team · October 14, 2026 · Everyday Training</p>
@@ -421,7 +458,7 @@ pairForm.addEventListener('submit',function(event){
 pairForm.addEventListener('reset',function(){document.getElementById('pair-result').textContent='Your suggestion will appear here.';});
 </script></article>
 
-  <aside class="sidebar"><section class="sidebar-panel"><h3>Practice priorities</h3><p>Individual check-ins, shared pauses, predictable turns and clear reward delivery.</p></section><section class="sidebar-panel"><h3>One change at a time</h3><p>Keep the route familiar when comparing leash arrangements. Note what becomes easier or harder.</p></section></aside>
+  <aside class="sidebar" data-follow-sidebar="existing"><section class="sidebar-panel"><h3>Practice priorities</h3><p>Individual check-ins, shared pauses, predictable turns and clear reward delivery.</p></section><section class="sidebar-panel"><h3>One change at a time</h3><p>Keep the route familiar when comparing leash arrangements. Note what becomes easier or harder.</p></section></aside>
 </div>
 
 <script>
