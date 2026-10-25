@@ -211,6 +211,43 @@ header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{dis
 .sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
 </style>
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Labrador Exercise: Better Choices Than Chasing Exhaustion">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://labrador-retriever-care.github.io/labrador-exercise-5min-rule-myth.html">
+<meta property="og:description" content="Labrador exercise mistakes explained: compare walks, fetch, swimming, and puppy activity, then use a practical planner to choose a safer routine for your Lab.">
+<meta property="og:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Labrador Exercise: Better Choices Than Chasing Exhaustion">
+<meta name="twitter:description" content="Labrador exercise mistakes explained: compare walks, fetch, swimming, and puppy activity, then use a practical planner to choose a safer routine for your Lab.">
+<meta name="twitter:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<!-- social-cards:end -->
 </head>
 <body>
 <header class="sc-topbar">
@@ -233,7 +270,7 @@ header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{dis
 
 
 <div class="hero"><div class="hero-inner"><p class="eyebrow">Exercise and Care</p><h1>Labrador Exercise: What Dog Owners Get Wrong (and Why)</h1><p>Compare practical alternatives and build an adaptable routine for your Lab.</p></div></div>
-<div class="layout">
+<div class="layout" data-follow-parent="true">
   <article class="article">
 <p class="meta">By Lab Care Research Team | Updated October 7, 2026 | Exercise and Care</p>
 <p>Does your Labrador exercise routine end with you asking whether your dog is finally tired enough? That question makes exhaustion the target and leaves the choice of activity out of the discussion. This guide compares the alternatives so you can plan around your own Lab rather than copy another owner’s schedule.</p>
@@ -308,7 +345,7 @@ function compareLabPlan(stage,choice,unsafe){
 document.getElementById('lab-compare').addEventListener('click',function(){document.getElementById('lab-result').textContent=compareLabPlan(document.getElementById('lab-stage').value,document.getElementById('lab-choice').value,document.getElementById('lab-hot').checked);});
 </script></article>
 
-  <aside class="sidebar">
+  <aside class="sidebar" data-follow-sidebar="existing">
 <section class="sidebar-panel"><h3>Before you choose</h3><ul><li>Check your dog’s current situation.</li><li>Compare the options in the article.</li><li>Follow existing veterinary restrictions.</li><li>Check weather, footing, and water.</li><li>Plan a manageable return journey.</li></ul></section>
 <section class="sidebar-panel"><h3>Planning checklist</h3><p>Use the interactive comparison in this article. It does not diagnose symptoms or prescribe safe minutes.</p></section>
 <div class="sidebar-panel"><h3>Keep a routine log</h3><ul><li>Record the chosen activity.</li><li>Describe the setting.</li><li>Note what you observe afterward.</li><li>Bring concerns to your veterinarian.</li></ul></div>
