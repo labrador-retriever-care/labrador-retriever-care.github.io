@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media (max-width:700px){
+  .layout-row{flex-direction:column!important;}
+  .layout-row aside{display:none!important;}
+  header nav{gap:8px!important;font-size:0.82rem!important;}
+  header div{flex-wrap:wrap!important;}
+}
+
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
+</style>
+<title>Ball-Obsessed Labrador: Fetch Rules and an Off Switch</title>
+<meta name="description" content="Ball-obsessed Labrador? Learn the fetch rules calm owners use, how to tell keen from fixated, and how to teach an off switch. Free checker builds your rules." />
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://labrador-retriever-care.github.io/labrador-ball-obsession-off-switch.html">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Palatino Linotype', 'Book Antiqua', serif; background: #f8f7fc; color: #1f2937; line-height: 1.78; }
+  a { color: #5b21b6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .article a { text-decoration: underline; }
+  .article a:hover { color: #3f1890; }
+  .topbar { background: #5b21b6; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 18px; align-items: center; }
+  .brand { color: #fff; font-size: 1.08rem; font-weight: 700; text-decoration: none; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; text-decoration: none; }
+  .hero { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); color: #fff; }
+  .hero-inner { max-width: 1120px; margin: 0 auto; padding: 32px 22px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.76rem; opacity: 0.88; }
+  .hero h1 { font-size: 2.2rem; line-height: 1.14; margin: 8px 0 12px; max-width: 860px; }
+  .hero p { max-width: 820px; color: rgba(255,255,255,0.92); }
+  .layout { max-width: 1120px; margin: 28px auto; padding: 0 22px 48px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 26px; align-items: start; }
+  .article { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .meta { color: #6b7280; font-size: 0.92rem; margin-bottom: 16px; }
+  .article h2 { color: #3f1890; font-size: 1.42rem; margin: 28px 0 12px; line-height: 1.25; }
+  .article h3 { color: #3f1890; font-size: 1.08rem; margin: 18px 0 10px; }
+  .article p { color: #4b5563; margin-bottom: 14px; }
+  .article ul, .article ol { padding-left: 22px; margin: 12px 0 18px; color: #4b5563; }
+  .article li { margin-bottom: 8px; }
+  .article table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font-size: 0.95rem; }
+  .article th { background: #5b21b6; color: #fff; text-align: left; padding: 12px; }
+  .article td { padding: 12px; border: 1px solid #e5e7eb; vertical-align: top; }
+  .article tr:nth-child(even) td { background: #f5f3ff; }
+  .callout { background: #f3e8ff; border-left: 4px solid #5b21b6; border-radius: 8px; padding: 18px; margin: 18px 0 22px; }
+  .callout p { margin-bottom: 0; color: #4b5563; }
+  .emergency { background: #fef2f2; border-left: 4px solid #dc2626; border-radius: 8px; padding: 18px; margin: 18px 0 22px; }
+  .emergency p { margin-bottom: 0; color: #7f1d1d; font-weight: 600; }
+  .note { background: #fff7ed; border-left: 4px solid #c2410c; border-radius: 8px; padding: 16px; margin: 18px 0 22px; }
+  .note p { margin-bottom: 0; color: #4b5563; }
+  .widget { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); padding: 22px; margin: 28px 0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .widget h3 { color: #fff; margin-top: 0; margin-bottom: 10px; font-size: 1.08rem; }
+  .widget p { color: rgba(255,255,255,0.92); margin-bottom: 14px; font-size: 0.96rem; }
+  .widget form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .widget input { flex: 1; min-width: 200px; padding: 10px 12px; border: none; border-radius: 6px; font-size: 0.95rem; }
+  .widget button { background: #fff; color: #5b21b6; padding: 10px 20px; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 0.95rem; }
+  .widget-disclaimer { color: rgba(255,255,255,0.75); font-size: 0.8rem; margin-top: 10px; margin-bottom: 0; }
+  .sidebar { position: sticky; top: 18px; display: grid; gap: 18px; }
+  .sidebar-panel { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .sidebar-panel h3 { color: #3f1890; font-size: 1rem; margin-bottom: 10px; }
+  .sidebar-panel p, .sidebar-panel li { color: #4b5563; font-size: 0.92rem; }
+  .sidebar-panel ul { padding-left: 18px; }
+  .sidebar-panel a { color: #5b21b6; text-decoration: underline; }
+  .sidebar-newsletter { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); color: #fff; }
+  .sidebar-newsletter h3, .sidebar-newsletter p { color: #fff; }
+  .sidebar-newsletter input { width: 100%; padding: 10px 11px; border: none; border-radius: 6px; margin: 10px 0 8px; }
+  .sidebar-newsletter button { width: 100%; padding: 10px; border: none; border-radius: 6px; background: #fff; color: #5b21b6; font-weight: 700; cursor: pointer; }
+  details { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 16px; margin: 0 0 12px; background: #fff; }
+  summary { cursor: pointer; font-weight: 700; color: #3f1890; }
+  details p { margin-top: 10px; margin-bottom: 0; color: #4b5563; }
+  .footer { background: #3f1890; color: rgba(255,255,255,0.75); margin-top: 32px; }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 20px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .footer a { color: rgba(255,255,255,0.9); text-decoration: none; }
+  @media (max-width: 840px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .hero h1 { font-size: 1.92rem; }
+  }
+</style>
+
+
+
+<style id="ball-content">article.article a{color:#0066cc;text-decoration:none}article.article a:visited{color:#0052a3}article.article a:hover{color:#0066cc;text-decoration:underline}#ball-form select{width:100%;padding:10px;font:inherit}#ball-form button,#ball-result button{padding:10px 14px;font:inherit;cursor:pointer}#ball-result{margin-top:14px}article.article .callout h2{margin-top:0}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Ball-Obsessed Labrador: How Owners Set Fetch Rules and Teach an Off Switch",
+ "description": "Ball-obsessed Labrador? Learn the fetch rules calm owners use, how to tell keen from fixated, and how to teach an off switch. Free checker builds your rules.",
+ "author": {
+  "@type": "Organization",
+  "name": "Lab Care Research Team"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Labrador Retriever Care"
+ },
+ "datePublished": "2026-11-02",
+ "dateModified": "2026-11-02",
+ "mainEntityOfPage": "https://labrador-retriever-care.github.io/labrador-ball-obsession-off-switch.html"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Is it bad to play fetch with a Labrador every day?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Daily fetch can be a great outlet if the game has rules: you start it, each throw follows a drop and a sit, you stop while your Lab is still keen, and the game ends with the same cue and a settle. Mix it with sniff walks and other games."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How do I stop my Lab from dropping the ball on me all evening?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Put the balls away, then ignore every ball delivery. A veterinary behaviorist writing in dvm360 notes that giving in now and then makes the begging stronger. Reward your Lab for lying down instead, and play at times you choose."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What is an off switch in dog training?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It is a learned habit of calming down when an activity ends. You teach a settle on a mat in small steps, then use it straight after a clear end-of-play cue, so your Lab learns that the end of the game means rest."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Should I take my Lab's ball away for good?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Usually not. Most Labs do well with a structured game. If your Lab skips food or rest for the ball, or cannot settle once it is gone, take a break from ball games and ask your vet about a veterinary behaviorist."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Why does my Lab lose interest in some toys but never the ball?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A 2012 study of 16 Labradors found dogs lose interest in a toy through repeated play and regain it when a different toy appears. A ball you throw is a game with you, which keeps it exciting much longer than a toy left on the floor."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How long does it take to teach a Lab to settle after fetch?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It varies. The Oregon Humane Society suggests adding the \"settle\" cue once your dog stays down for 20 seconds or more, then building toward several minutes. Practice the settle on its own first, then add it to the end of short games."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "VideoObject",
+ "name": "How to teach your puppy an OFF switch!",
+ "description": "Adolescent Dogs trainers show how to teach a puppy to switch off and settle on cue, the first video in their Calm Canine Challenge series.",
+ "thumbnailUrl": "https://i.ytimg.com/vi/yLZBsTIz8H0/hqdefault.jpg",
+ "uploadDate": "2020-12-16T00:00:00+00:00",
+ "embedUrl": "https://www.youtube-nocookie.com/embed/yLZBsTIz8H0"
+}</script>
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Ball-Obsessed Labrador: Fetch Rules and an Off Switch">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://labrador-retriever-care.github.io/labrador-ball-obsession-off-switch.html">
+<meta property="og:description" content="Ball-obsessed Labrador? Learn the fetch rules calm owners use, how to tell keen from fixated, and how to teach an off switch. Free checker builds your rules.">
+<meta property="og:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ball-Obsessed Labrador: Fetch Rules and an Off Switch">
+<meta name="twitter:description" content="Ball-obsessed Labrador? Learn the fetch rules calm owners use, how to tell keen from fixated, and how to teach an off switch. Free checker builds your rules.">
+<meta name="twitter:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<!-- social-cards:end -->
+<style>.hero-inner.with-photo{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:48px;grid-template-rows:auto auto 1fr;align-items:start}.hero-inner.with-photo>*{grid-column:1}.hero-inner.with-photo>.hero-photo{grid-column:2;grid-row:1/span 3;margin:0;align-self:center}.hero-photo img{display:block;width:100%;height:auto;border-radius:8px}.hero-photo figcaption{font-size:11px;color:inherit;opacity:.75;margin-top:4px}@media(max-width:860px){.hero-inner.with-photo{display:block}.hero-photo{display:none}}</style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #5b21b6;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #481a91;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+/* links blue: the most recognisable clickable colour (owner 2026-10-13); not the bar, footer, buttons or cards */
+a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]){color:#0066cc!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):visited{color:#0052a3!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):hover{text-decoration:underline}
+/* site name always readable on the bar, whatever the article CSS does with links (owner 2026-10-13) */
+.sc-topbar .sc-topbar-brand,.sc-topbar .sc-topbar-brand:visited,.sc-topbar .sc-topbar-brand:hover{color:#fff!important}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
+<style id="sc-font">body{font-family:'Palatino Linotype', 'Book Antiqua', serif}body h1,body h2,body h3{font-family:'Palatino Linotype', 'Book Antiqua', serif}</style>
+<style id="sc-labrador-design">
+:root{--p:#f5f8f3;--i:#1d3326;--m:#55665a;--l:#d6e2d5;--d:#23402e;--od:#f1f7ee;--a:#e8c26a;--ai:#6b5418;--card:#ffffff;--bar:#23402e;--bart:#f1f7ee;--r:16px;--hf:'Segoe UI','Helvetica Neue',Arial,sans-serif;--bf:Georgia,'Times New Roman',serif;--p2:#f3efdd}
+body{background:var(--p)!important;color:var(--i);font-family:var(--bf)!important}html body :is(h1,h2,h3,h4){font-family:var(--hf)!important}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
+header.sc-topbar{background:var(--bar)!important;color:var(--bart);box-shadow:none;border-bottom:3px solid var(--a);position:sticky;top:0;z-index:100}
+header.sc-topbar .sc-topbar-inner{max-width:1240px;height:auto;min-height:68px;padding:10px 28px;gap:18px}
+header.sc-topbar a.sc-topbar-brand:is(#_,a),header.sc-topbar a.sc-topbar-brand:is(#_,a):visited{color:var(--bart)!important;font:800 1.4rem/1.1 var(--hf);letter-spacing:-.02em;text-transform:none}
+header.sc-topbar .sc-topbar-nav{gap:2px;margin:0;padding:0;flex-wrap:wrap}
+header.sc-topbar .sc-topbar-nav a{display:block;color:var(--bart);padding:10px 13px;min-height:44px;border-radius:var(--r);font-weight:600;font-size:.86rem}
+header.sc-topbar .sc-topbar-nav a:hover,header.sc-topbar .sc-topbar-nav a[aria-current="page"]{background:var(--bart);color:var(--bar);text-decoration:none}
+.breadcrumb{background:transparent!important;border:0!important}.breadcrumb-inner{max-width:1240px!important;margin:0 auto;padding:14px 28px;font-size:.78rem;color:var(--m)}
+.sd-cover{position:relative;max-width:1184px;margin:6px auto 34px;overflow:hidden;border-radius:var(--r)}
+.sd-cover h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 18px;color:inherit;text-transform:none;text-wrap:balance}
+.sd-cover .intro{font-size:1.06rem;line-height:1.75;margin:0 0 20px;max-width:46ch;color:inherit;opacity:.88}
+.sd-cover .categories{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.sd-cover .cat-tag{border-radius:var(--r);padding:7px 12px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--card);color:var(--ai);border:1px solid var(--a)}
+.sd-art{min-height:220px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%23e8c26a'%3E%3Cellipse cx='20' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='44' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='9' cy='34' rx='5' ry='7'/%3E%3Cellipse cx='55' cy='34' rx='5' ry='7'/%3E%3Cpath d='M32 28c-10 0-18 12-18 20 0 6 6 8 10 6 4-2 6-2 8-2s4 0 8 2c4 2 10 0 10-6 0-8-8-20-18-20z'/%3E%3C/g%3E%3C/svg%3E") 0 0/56px 56px repeat}
+.page-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
+.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-content:start;background:transparent!important;box-shadow:none!important;padding:0!important;border:0!important}
+.main-content>:not(article){grid-column:1/-1}
+.main-content>article{position:relative;min-width:0;margin:0!important;padding:26px!important;background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none;transition:transform .15s,box-shadow .15s}
+.main-content>article h2{font-size:1.3rem!important;line-height:1.25!important;margin:0 0 12px!important}
+.main-content>article h2 a::after{content:"";position:absolute;inset:0}
+.main-content>article p{color:var(--m)!important;font-size:.92rem!important;line-height:1.7}
+.main-content>article p:first-of-type{color:var(--ai)!important;font-size:.72rem!important;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.sidebar :is(.sidebar-about,.sidebar-links,.sidebar-panel){background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none!important}
+.sidebar :is(h3,h4){color:var(--ai)!important;font-size:.76rem!important;letter-spacing:.1em;text-transform:uppercase}
+.sidebar-about strong{color:var(--i)}
+.hero{background:#23402e!important;color:#f1f7ee!important;border-bottom:4px solid var(--a)}
+.hero h1{color:#f1f7ee!important;letter-spacing:-.02em;text-transform:none}.hero p{color:#f1f7ee!important;opacity:.9}
+.layout{max-width:1240px!important}.hero-inner{max-width:1240px!important;padding-left:22px;padding-right:22px}
+.article,article.article{background:var(--card)!important;border:1px solid var(--l);border-radius:var(--r)!important;box-shadow:none!important}
+.article h2{color:var(--i);border-bottom:2px solid var(--a);padding-bottom:6px}.article h3{color:var(--i)}
+.article th{background:var(--p2)!important;color:var(--i)!important}
+.article blockquote{border-left:4px solid var(--a);background:var(--p2);margin:22px 0;padding:14px 20px}
+.wrap .panel{background:var(--card)!important;border:1px solid var(--l);border-top:5px solid var(--a);border-radius:var(--r)!important;box-shadow:none!important}
+.wrap .panel h1{color:var(--i);text-transform:none}
+footer.sc-footer{background:var(--d)!important;color:var(--od)!important;border-top:6px solid var(--a);padding:34px 20px;margin-top:48px}
+footer.sc-footer a{color:var(--od)!important;display:inline-block;padding:10px 4px}
+
+.sd-cover{display:grid;grid-template-columns:1fr 260px;gap:28px;align-items:end;padding:40px 36px;background:var(--p2);border-left:12px solid var(--a);color:var(--i)}
+.sd-cover .intro{color:var(--m);opacity:1}
+.sd-art{min-height:220px;border-radius:var(--r);background-color:var(--d)}
+.main-content>article{border:0!important;border-radius:calc(var(--r) + 4px)!important;box-shadow:0 6px 22px rgba(0,0,0,.06)}
+.main-content>article:first-of-type{grid-column:1/-1;background:var(--p2)!important;padding:34px!important}
+.main-content>article:first-of-type h2{font-size:1.9rem!important}
+.main-content>article:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.1)}
+@media(max-width:900px){.page-wrap{grid-template-columns:minmax(0,1fr)!important}.main-content{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){header.sc-topbar .sc-topbar-inner{display:block;padding:14px 16px}header.sc-topbar a.sc-topbar-brand:is(#_,a){display:block;margin-bottom:10px}
+header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}header.sc-topbar .sc-topbar-nav a{padding:11px 2px;text-align:center;font-size:.8rem}
+.breadcrumb-inner{padding:12px 16px}.sd-cover{display:block!important;margin:4px 16px 26px;padding:0}.sd-cover-text,.sd-cover.sd-centered{padding:30px 22px}
+.sd-cover h1{font-size:2.4rem}.sd-art{min-height:90px;margin:0;box-shadow:none}
+.sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Labrador Retriever Guide</a>
+    <nav>
+      <ul class="sc-topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html" aria-current="page">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<div class="hero">
+<div class="hero-inner with-photo"><p class="eyebrow">Labrador Retriever training</p><h1>Ball-Obsessed Labrador: How Owners Set Fetch Rules and Teach an Off Switch</h1><p>Why some Labs can't stop thinking about the ball, the house rules that calm owners use, and a step-by-step way to teach "game over."</p>
+    <figure class="hero-photo"><img src="/assets/home-editorial-20261025.webp" alt="yellow Labrador Retriever walking along a lakeside path - AI-generated illustration" width="1536" height="1024" loading="lazy" decoding="async"><figcaption>AI-generated illustration.</figcaption></figure>
+  </div></div>
+<div class="layout" data-follow-parent="true">
+  <article class="article">
+<nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">Ball-Obsessed Labrador</span></nav>
+
+<p>A ball-obsessed Labrador is the dog who drops a slobbery tennis ball on your laptop, stares at the cupboard where the balls live, and still wants "just one more" after forty throws. Most owners start out happy to have such a keen retriever and end up wondering whether the dog has an off switch at all. The good news: the owners who live calmly with ball-crazy Labs did not remove the ball. They turned it into a privilege with house rules, and taught the dog that the game has a clear end.</p>
+
+<div class="callout"><p><strong>Quick answer:</strong> Keep the ball out of sight between games, so it appears only by your invitation. Start every throw with a calm behavior (drop, then sit or wait), keep sessions short, and end every game with the same "all done" cue followed by a settle on a mat. Never restart the game because your Lab begs; a veterinary behaviorist writing in dvm360 warns that giving in now and then makes begging stronger. If the ball crowds out eating, resting or other play, talk to your vet or a veterinary behaviorist.</p></div>
+
+<p>Not sure where your own Lab sits? Answer seven quick questions about a normal week. The checker scores your answers and builds a personal set of fetch rules you can copy and stick on the fridge.</p>
+
+<section aria-labelledby="ball-check-heading" class="callout" id="ball-check">
+<h2 id="ball-check-heading">Ball-drive checker and fetch rules builder</h2>
+<p>Pick the answer closest to your Lab's typical behavior, not their best or worst day.</p>
+<form id="ball-form">
+<p><label for="bq-beg">When you sit down at home, how often does your Lab bring you a ball?</label><br><select id="bq-beg"><option value="0">Rarely or never</option><option value="1">Sometimes, gives up if ignored</option><option value="2">Most times, keeps pushing it at me</option></select></p>
+<p><label for="bq-stash">When the ball is put away, what does your Lab do?</label><br><select id="bq-stash"><option value="0">Forgets about it within a few minutes</option><option value="1">Checks the cupboard or bag now and then</option><option value="2">Stares, whines or paws at where it is kept</option></select></p>
+<p><label for="bq-drop">Will your Lab drop the ball on one cue?</label><br><select id="bq-drop"><option value="0">Yes, reliably</option><option value="1">Sometimes, or only for food</option><option value="2">No, plays keep-away or chews it</option></select></p>
+<p><label for="bq-wait">Can your Lab sit or wait while you hold the ball up?</label><br><select id="bq-wait"><option value="0">Yes, for several seconds</option><option value="1">Briefly, then breaks</option><option value="2">No, jumps, barks or spins</option></select></p>
+<p><label for="bq-end">After the last throw, how long until your Lab is calm?</label><br><select id="bq-end"><option value="0">A few minutes</option><option value="1">Up to half an hour of nudging</option><option value="2">Keeps pestering or searching much longer</option></select></p>
+<p><label for="bq-crowd">Does the ball crowd out other things?</label><br><select id="bq-crowd"><option value="0">No, also sniffs, plays with dogs, eats normally</option><option value="1">Ignores other dogs or smells at the park</option><option value="2">Skips food, water or rest to keep playing</option></select></p>
+<p><label for="bq-throws">How many throws are in a typical session?</label><br><select id="bq-throws"><option value="0">Under 10</option><option value="1">10 to 30</option><option value="2">More than 30, or until I give up</option></select></p>
+<button type="submit">Check my Lab and build our rules</button> <button type="reset">Reset</button>
+</form>
+<div id="ball-result" role="status" aria-live="polite" aria-atomic="true"><p>Your result will appear here.</p></div>
+<noscript><p>Without JavaScript: count the answers where you picked the third option. Three or more means start with the "ball goes away" rule and the settle steps below before playing fetch again.</p></noscript>
+</section>
+
+<h2>Why are some Labradors so obsessed with balls?</h2>
+<p>Labradors were bred to chase and bring back what you throw, and a ball triggers that whole sequence in seconds. Add a person who throws on demand and you have a game that rewards itself every time it is played.</p>
+<p>Retrieving is the job the breed was shaped for, so a keen interest in the ball is normal Lab behavior, not a fault. What turns keenness into obsession is usually the way the game is run at home: the ball is always lying around, the dog can start a game whenever they like, and the game ends only when the human gets bored.</p>
+<h3>What the research says about toys and boredom</h3>
+<p>Researchers have tested exactly this with Labradors. In a 2012 study, <a href="https://caninewelfare.centers.purdue.edu/resource/habituation-and-dishabituation-during-object-play-in-kennel-housed-dogs">summarized by Purdue University's Center for Canine Welfare</a>, Pullen, Merrill and Bradshaw gave 16 kennel-housed Labrador Retrievers the same toy for repeated 30-second periods until the dogs stopped playing with it. Interest faded with repetition, then came back when a different toy was offered. Changing only the color or smell of the new toy made no difference, and waiting anywhere from 10 seconds to 15 minutes before offering it did not change the result.</p>
+<p>That matters for owners because it shows two things. First, even Labs do get bored of a toy on its own. Second, the toys that never get boring are the ones attached to a person: a ball that only moves when you throw it is a social game, not a solo toy. That is exactly why it is the owner who holds the keys to the ball.</p>
+<h3>The "invitation only" mindset</h3>
+<p>The calmest ball-loving Labs we hear about live with owners who treat the ball like a members-only club. The dog does not get access by barking at the door. Access is by invitation, at a time the owner chooses, and the membership card is a calm behavior. Everything below builds on that one idea.</p>
+
+<p>In this short training video, UK trainers Adolescent Dogs show how they teach a puppy to switch off and settle on cue, the same skill your Lab needs at the end of a ball game:</p>
+<div style="position:relative;width:100%;aspect-ratio:16/9;margin:12px 0 20px"><iframe src="https://www.youtube-nocookie.com/embed/yLZBsTIz8H0" title="How to teach your puppy an OFF switch! - Adolescent Dogs" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen></iframe></div>
+
+<h2>Is my Lab ball-obsessed or just a keen retriever?</h2>
+<p>A keen retriever loves the game but can stop, rest and do other things. A ball-fixated Lab struggles to think about anything else, and the ball starts to push out eating, resting and other kinds of play.</p>
+<p>Veterinary behaviorist Dr. John Ciribassi answered this question about a Lab in <a href="https://www.dvm360.com/view/just-ask-expert-inhibiting-labs-infatuation-with-its-toy-ball">a dvm360 "Just Ask the Expert" column</a>. The dog in that case begged his owners to play ball whenever they sat down. Dr. Ciribassi explained that compulsive behaviors are often normal activities that show up out of context and occur "to the exclusion of other normal daily activities such as eating, exercise, or other forms of play." That is the line to watch: not how much your Lab loves the ball, but what the ball is pushing out of their day.</p>
+<table><caption>Keen retriever versus ball-fixated Lab: what owners usually notice</caption><thead><tr><th>Situation</th><th>Keen retriever</th><th>Ball-fixated Lab</th></tr></thead><tbody>
+<tr><td>Ball goes in the cupboard</td><td>Wanders off, finds something else to do</td><td>Stares at the cupboard, whines or paws at it</td></tr>
+<tr><td>Owner sits down</td><td>Lies nearby or brings a ball once</td><td>Pushes the ball at the owner again and again</td></tr>
+<tr><td>At the park</td><td>Mixes fetch with sniffing and greeting dogs</td><td>Ignores dogs and smells, watches only the ball</td></tr>
+<tr><td>End of the game</td><td>Settles within a few minutes</td><td>Searches, barks or brings other objects to restart</td></tr>
+<tr><td>Food and water</td><td>Stops to drink, eats normally after</td><td>Skips water or a meal to keep playing</td></tr>
+<tr><td>Before the throw</td><td>Can sit or wait for a few seconds</td><td>Spins, jumps or barks until the ball flies</td></tr>
+</tbody></table>
+<div class="note"><p><strong>When to get help:</strong> if your Lab skips meals or rest for the ball, or cannot settle at all once it is gone, ask your vet for a referral to a veterinary behaviorist. This article covers training habits, not diagnosis.</p></div>
+
+<h2>What fetch rules do calm ball-loving Lab owners use?</h2>
+<p>Most use the same handful: the ball lives out of reach, the human starts and ends every game, each throw is earned with a calm behavior, sessions are short, and the game ends with one consistent cue.</p>
+<h3>Rule 1: The ball lives in a closed drawer</h3>
+<p>A ball left on the floor is an open invitation. Put fetch balls in a closed cupboard or a bag on a hook, so the ball only exists when you bring it out. Chew toys that are not balls can stay available.</p>
+<h3>Rule 2: You start the game, not the dog</h3>
+<p>If pushing a ball at your knee works even once in a while, your Lab learns to push harder. Dr. Ciribassi's advice in the dvm360 column is blunt: the owners should consistently refuse the dog's requests, because giving in occasionally strengthens the behavior and makes it harder to change. Invite the game when your Lab is lying calmly instead.</p>
+<h3>Rule 3: Every throw is earned with calm</h3>
+<p>Ask for a drop, then a sit or a short wait. The throw is the reward. A Lab who learns that calm makes the ball fly will start offering calm on their own.</p>
+<h3>Rule 4: Short sessions with a planned end</h3>
+<p>Decide the number of throws before you start and stop while your Lab is still keen, not when they are frantic. Fewer, better throws beat a half-hour marathon.</p>
+<h3>Rule 5: One "all done" cue, every time</h3>
+<p>Pick a phrase ("All done," "Finished") and use it only at the real end. Show empty hands, put the ball away in front of your Lab, and do not restart the game if they bark or bring a different toy.</p>
+<h3>Rule 6: Visitors follow the same rules</h3>
+<p>Guests and neighbors love throwing for a Lab who begs. Ask them not to, or hand them your rules. In a long <a href="https://www.dogtrickacademy.com/forum/threads/how-to-stop-ball-obsession.2305/">Dog Trick Academy forum thread on ball obsession</a>, experienced members advised the owner of a ball-mad dog to ask people not to throw the ball, to limit throws and to use a consistent end-of-game word. After working on "leave it," the owner reported that the dog would leave the ball when asked, sometimes reluctantly, and go off to sniff or play with other dogs.</p>
+<table><caption>Fetch rules at a glance: what each one teaches your Lab</caption><thead><tr><th>Rule</th><th>What your Lab learns</th><th>Start when</th></tr></thead><tbody>
+<tr><td>Ball in a closed drawer</td><td>The ball is not always available</td><td>Today</td></tr>
+<tr><td>You start the game</td><td>Begging does not work, calm does</td><td>Today</td></tr>
+<tr><td>Drop on cue</td><td>Giving up the ball makes it come back</td><td>Week 1</td></tr>
+<tr><td>Sit or wait before the throw</td><td>Self-control is the price of a throw</td><td>Week 1 to 2</td></tr>
+<tr><td>Planned number of throws</td><td>Games end while still fun</td><td>Week 1</td></tr>
+<tr><td>"All done" plus mat</td><td>The end of the game means rest</td><td>Week 2 onward</td></tr>
+</tbody></table>
+
+<h2>How do you teach a Labrador an off switch?</h2>
+<p>Teach a calm "settle" on a mat away from the ball first, then link it to the end of play: last throw, "all done," ball away, settle on the mat, and a few calm rewards while your Lab lies down.</p>
+<p>The settle itself is taught in tiny steps. The <a href="https://www.oregonhumane.org/training/settle/">Oregon Humane Society's guide to teaching "settle"</a> starts with you in a chair and your dog lying down beside you. You mark and reward while the dog stays down, add a release word, and slowly stretch the time between rewards. Only when your dog stays down for 20 seconds or more with just a few treats do you add the word "Settle." The goal is a dog who lies quietly on a mat or rug for several minutes. If your dog cannot settle at all, the guide suggests practicing after a hard exercise session, and practicing while you watch TV.</p>
+<h3>Linking the settle to the ball game</h3>
+<ol>
+<li><strong>Practice the settle on its own</strong> for a week, with no ball in sight, until your Lab lies down on the mat on cue.</li>
+<li><strong>Play a short game</strong>, three to five throws, each one after a drop and a sit.</li>
+<li><strong>Say your end cue</strong>, show empty hands and put the ball away while your Lab watches.</li>
+<li><strong>Cue the settle</strong> and drop calm rewards between your Lab's front paws while they lie down. A chew or a lick mat can help them wind down.</li>
+<li><strong>Release, then walk away.</strong> Go on with your day. If your Lab follows you around, see our guide to the <a href="/labrador-velcro-dog-separation-anxiety.html">Velcro Lab who follows you everywhere</a>.</li>
+<li><strong>Raise the challenge slowly</strong>: more throws, then the settle outdoors, then the settle with the ball in your pocket.</li>
+</ol>
+<h3>Redirect, do not scold</h3>
+<p>If your Lab starts pestering again, a short burst of easy training works better than a sharp word. The dvm360 column suggests interrupting the behavior and running a one- to two-minute session of simple obedience exercises, rewarding each repetition with tasty treats.</p>
+
+<h2>Can you still play fetch with a ball-obsessed Lab?</h2>
+<p>Yes, for most Labs. The aim is a structured game, not a ban. In the dvm360 case the expert did advise stopping ball play while the behavior was changed, so for a truly fixated dog a break from the ball comes first.</p>
+<p>For a typical keen Lab, structured fetch is a good outlet. Mix it with other ways to use the retriever brain: hide the ball and send your Lab to search for it, play fetch in water if your dog swims (our guide on <a href="/teach-labrador-to-swim.html">teaching a Labrador to swim</a> covers safe starts), or switch to toys that do not look like a ball for a few weeks, as Dr. Ciribassi recommends. Walks, sniffing and short training sessions are on his list of alternatives too.</p>
+<h3>How much fetch is enough?</h3>
+<p>There is no research-backed number of throws for Labs. Watch your own dog: stop while they still run back happily, before their retrieves get frantic or sloppy. For an overall picture of exercise needs, see our look at <a href="/labrador-exercise-5min-rule-myth.html">the 5-minute exercise rule and what it really means</a>.</p>
+
+<h2>Does a ball-obsessed Lab grow out of it?</h2>
+<p>Some calm down with age, but the habits you build matter more than the calendar. A Lab who has learned that begging works will keep begging at five years old.</p>
+<p>Many owners report their Labs becoming easier as they mature, which we cover in <a href="/labrador-calm-down-age.html">when Labradors calm down</a>. Ball habits, though, are learned. A dog who was taught "you start, you finish" as a youngster tends to carry those rules into adulthood. Starting at any age still works: you are changing what pays off for your dog, and that can be done with a two-year-old or an eight-year-old.</p>
+<h3>Two Labs, one ball</h3>
+<p>Multi-dog homes add another layer: one dog may guard the ball or race the other to every throw. Give each dog a turn while the other waits, or use two balls. Our guide to <a href="/walk-two-labradors.html">walking two Labradors</a> covers the control skills that help here.</p>
+
+<h2>Step-by-step: your first two weeks</h2>
+<p>Use this checklist to move from "ball all day" to "ball by invitation" without drama.</p>
+<ol>
+<li><strong>Day 1:</strong> collect every ball in the house and garden and put them away in one closed place.</li>
+<li><strong>Days 1 to 3:</strong> ignore every ball request. No eye contact, no "not now." Reward your Lab when they lie down calmly instead.</li>
+<li><strong>Days 2 to 7:</strong> practice the settle on a mat twice a day, away from the ball.</li>
+<li><strong>Days 3 to 7:</strong> teach "drop" by trading the ball for a treat or a second ball, then give the first ball back.</li>
+<li><strong>Week 2:</strong> play short, planned games: drop, sit, throw, repeat. Finish with your end cue and a settle.</li>
+<li><strong>Week 2:</strong> tell family and visitors the house rules so nobody restarts the game.</li>
+<li><strong>End of week 2:</strong> re-run the checker at the top of this page and compare your answers.</li>
+</ol>
+<div style="border:1px solid #c4b5fd;background:#faf9ff;padding:14px 18px;margin:24px 0;border-radius:6px;"><p style="margin:0;font-size:0.93rem;color:#4b5563;"><strong style="color:#5b21b6;">Reviewed Content:</strong> This article was reviewed by the Lab Care Research Team. Breed-specific health data (especially regarding bloat and joint concerns) is handled with particular care.</p></div>
+
+<h2>Common mistakes with ball-crazy Labs</h2>
+<ul>
+<li><strong>Throwing to make the barking stop.</strong> It works for a minute and teaches your Lab to bark louder next time.</li>
+<li><strong>Leaving balls lying around.</strong> The dog never gets a break from the trigger.</li>
+<li><strong>Ending only when you are tired.</strong> Your Lab learns the game ends when they lose, not when you say so.</li>
+<li><strong>Using a new end word every day.</strong> One cue, said calmly, every single time.</li>
+<li><strong>Taking the ball away with a fight.</strong> Grabbing turns "drop" into keep-away. Trade instead.</li>
+<li><strong>Scolding an excited dog.</strong> A sharp tone adds arousal. Calm voice, calm hands, a clear routine.</li>
+<li><strong>Using fetch as the only exercise.</strong> Sniff walks, swimming and short training sessions also tire a Lab, and with less frenzy.</li>
+<li><strong>Waiting too long to ask for help.</strong> If the ball pushes out food or rest, involve your vet.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>Is it bad to play fetch with a Labrador every day?</summary><p>No. Daily fetch can be a great outlet if the game has rules: you start it, each throw follows a drop and a sit, you stop while your Lab is still keen, and the game ends with the same cue and a settle. Mix it with sniff walks and other games.</p></details>
+<details><summary>How do I stop my Lab from dropping the ball on me all evening?</summary><p>Put the balls away, then ignore every ball delivery. A veterinary behaviorist writing in dvm360 notes that giving in now and then makes the begging stronger. Reward your Lab for lying down instead, and play at times you choose.</p></details>
+<details><summary>What is an off switch in dog training?</summary><p>It is a learned habit of calming down when an activity ends. You teach a settle on a mat in small steps, then use it straight after a clear end-of-play cue, so your Lab learns that the end of the game means rest.</p></details>
+<details><summary>Should I take my Lab's ball away for good?</summary><p>Usually not. Most Labs do well with a structured game. If your Lab skips food or rest for the ball, or cannot settle once it is gone, take a break from ball games and ask your vet about a veterinary behaviorist.</p></details>
+<details><summary>Why does my Lab lose interest in some toys but never the ball?</summary><p>A 2012 study of 16 Labradors found dogs lose interest in a toy through repeated play and regain it when a different toy appears. A ball you throw is a game with you, which keeps it exciting much longer than a toy left on the floor.</p></details>
+<details><summary>How long does it take to teach a Lab to settle after fetch?</summary><p>It varies. The Oregon Humane Society suggests adding the "settle" cue once your dog stays down for 20 seconds or more, then building toward several minutes. Practice the settle on its own first, then add it to the end of short games.</p></details>
+
+<h2>The bottom line</h2>
+<p>A ball-obsessed Labrador does not need less love for the ball; they need a ball that comes with rules. Keep it out of sight, make calm the price of every throw, keep games short and end each one with the same cue and a settle on the mat. Within a couple of weeks most owners find the ball becomes a treat to look forward to rather than a constant demand. If it keeps pushing out food and rest, bring in your vet and a veterinary behaviorist.</p>
+
+<div class="ai-note" style="border-left:4px solid #5b21b6;background:#f7f9fa;padding:12px 16px;margin:24px 0;font-size:0.9rem;color:#4b5563"><strong>AI-assisted article · Lab Care Research Team.</strong> Lab Care Research Team uses AI tools for source aggregation and first-draft outlines. All claims are reviewed by our editorial team against current breed health literature before publication. The checker gives a training starting point, not a behavioral diagnosis.</div>
+<script>
+(function(){
+ function add(area,tag,text){var el=document.createElement(tag);el.textContent=text;area.appendChild(el);return el;}
+ var ids=['bq-beg','bq-stash','bq-drop','bq-wait','bq-end','bq-crowd','bq-throws'];
+ var form=document.getElementById('ball-form');
+ form.addEventListener('submit',function(e){
+  e.preventDefault();
+  var area=document.getElementById('ball-result');area.textContent='';
+  var v={},score=0,high=0;
+  ids.forEach(function(id){var n=parseInt(document.getElementById(id).value,10)||0;v[id]=n;score+=n;if(n===2)high++;});
+  var level,summary;
+  if(v['bq-crowd']===2||score>=10){level='Ball-fixated: pause the ball and get support';summary='Your answers suggest the ball is pushing other parts of life aside. Put all balls away for now, teach the settle with no ball in sight, and ask your vet about a veterinary behaviorist.';}
+  else if(score>=5){level='Ball-driven: your Lab needs house rules';summary='A keen retriever who has learned that pestering works. Clear rules and a trained off switch usually change this within a few weeks.';}
+  else {level='Keen retriever: keep the good habits';summary='Your Lab loves the game but can stop. Keep the structure so it stays that way.';}
+  add(area,'h3',level+' (score '+score+' of 14)');
+  add(area,'p',summary);
+  var rules=[];
+  rules.push('Balls live in a closed drawer or bag. They come out only when we invite a game.');
+  if(v['bq-beg']>0) rules.push('Ball requests are ignored. Calm lying down gets attention, and the game starts when we choose.');
+  if(v['bq-drop']>0) rules.push('Practice "drop" by trading for a treat or a second ball, then give the first ball back.');
+  else rules.push('Every throw starts with a drop on cue.');
+  if(v['bq-wait']>0) rules.push('Hold the ball still and wait for a sit. Any jumping or barking and the ball goes behind your back for a few seconds.');
+  else rules.push('Ask for a sit or wait before every throw.');
+  var cap=v['bq-crowd']===2||score>=10?'No ball games for now; use sniff walks, searches for food and training instead.':(score>=5?'Plan 5 to 10 throws per session and stop while your Lab is still keen.':'Plan the number of throws before you start and stop while your Lab is still keen.');
+  rules.push(cap);
+  rules.push('Every game ends with the same "all done" cue, empty hands and the ball put away in sight.');
+  if(v['bq-end']>0) rules.push('After "all done," cue a settle on the mat and reward calm lying down. Practice the settle alone twice a day.');
+  if(v['bq-crowd']===1) rules.push('At the park, mix throws with sniff breaks and greetings so the ball is not the only thing that matters.');
+  if(v['bq-throws']===2) rules.push('Cut long marathons: fewer, better throws, with drink breaks.');
+  rules.push('Visitors and family follow the same rules: nobody throws because the dog begs.');
+  add(area,'p','Your fetch rules:');
+  var ol=document.createElement('ol');rules.forEach(function(r){add(ol,'li',r);});area.appendChild(ol);
+  if(high>=3&&v['bq-crowd']!==2) add(area,'p','You picked the strongest answer '+high+' times. Start with the ball-away and settle steps for a week before playing fetch again.');
+  var btn=document.createElement('button');btn.type='button';btn.textContent='Copy my rules';
+  btn.addEventListener('click',function(){var t='Our fetch rules:\n'+rules.map(function(r,i){return (i+1)+'. '+r;}).join('\n');
+   if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){btn.textContent='Copied';},function(){btn.textContent='Copy failed, select the list instead';});}else{btn.textContent='Select the list to copy it';}});
+  area.appendChild(btn);
+ });
+ form.addEventListener('reset',function(){document.getElementById('ball-result').textContent='Your result will appear here.';});
+})();
+</script>
+</article>
+
+  <aside class="sidebar" data-follow-sidebar="existing"><section class="sidebar-panel"><h3>Ball by invitation</h3><p>Balls out of sight between games. You start the game, calm earns each throw.</p></section><section class="sidebar-panel"><h3>The off switch</h3><p>Last throw, "all done," ball away, settle on the mat, calm rewards.</p></section><section class="sidebar-panel"><h3>Get help if</h3><p>The ball pushes out food, water or rest, or your Lab cannot settle once it is gone.</p></section></aside>
+</div>
+
+
+<script>
+(function() {
+  var _ga4 = "";
+  var _site = "labrador-retriever-care.github.io";
+  var _article = "labrador-ball-obsession-off-switch";
+  var _startTime = Date.now();
+  var _scrollMarks = {25: false, 50: false, 75: false, 100: false};
+
+  function _send(name, params) {
+    var data = Object.assign({page: _article, site: _site}, params);
+    if (_ga4 && typeof gtag === "function") {
+      gtag("event", name, data);
+    }
+    try {
+      var log = JSON.parse(localStorage.getItem("_ptrack") || "[]");
+      log.push({t: new Date().toISOString(), e: name, d: data});
+      if (log.length > 200) log = log.slice(-200);
+      localStorage.setItem("_ptrack", JSON.stringify(log));
+    } catch(e) {}
+  }
+
+  function _onScroll() {
+    var scrolled = window.scrollY + window.innerHeight;
+    var total = document.documentElement.scrollHeight;
+    var pct = Math.round((scrolled / total) * 100);
+    [25, 50, 75, 100].forEach(function(mark) {
+      if (!_scrollMarks[mark] && pct >= mark) {
+        _scrollMarks[mark] = true;
+        _send("scroll_depth", {depth: mark});
+      }
+    });
+  }
+  window.addEventListener("scroll", _onScroll, {passive: true});
+
+  function _sendTime() {
+    var secs = Math.round((Date.now() - _startTime) / 1000);
+    _send("time_on_page", {seconds: secs});
+  }
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) _sendTime();
+  });
+  window.addEventListener("pagehide", _sendTime);
+
+  document.addEventListener("click", function(e) {
+    var btn = e.target.closest("button");
+    if (btn) {
+      var box = btn.closest(".sidebar-newsletter, [class*='newsletter']");
+      if (box) _send("newsletter_click", {label: btn.textContent.trim().slice(0, 40)});
+    }
+    var link = e.target.closest("a[href]");
+    if (link && !link.href.includes(window.location.hostname)) {
+      _send("outbound_click", {url: link.href.slice(0, 100)});
+    }
+  });
+
+  _send("article_view", {});
+})();
+</script>
+
+
+
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
+  </div>
+  <p>&copy; 2026 labrador-retriever-care.github.io &mdash; Labrador Retriever Guide. All rights reserved.</p>
+</footer>
+</body>
+</html>
