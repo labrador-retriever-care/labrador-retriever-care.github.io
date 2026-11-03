@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media (max-width:700px){
+  .layout-row{flex-direction:column!important;}
+  .layout-row aside{display:none!important;}
+  header nav{gap:8px!important;font-size:0.82rem!important;}
+  header div{flex-wrap:wrap!important;}
+}
+
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
+</style>
+<title>How Much to Feed a Labrador: Real Cups per Day</title>
+<meta name="description" content="How much to feed a Labrador? See real owner amounts, a cups-per-day calculator by weight, age and activity, and the vet formula behind every bag guide." />
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://labrador-retriever-care.github.io/how-much-feed-labrador.html">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Palatino Linotype', 'Book Antiqua', serif; background: #f8f7fc; color: #1f2937; line-height: 1.78; }
+  a { color: #5b21b6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .article a { text-decoration: underline; }
+  .article a:hover { color: #3f1890; }
+  .topbar { background: #5b21b6; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 18px; align-items: center; }
+  .brand { color: #fff; font-size: 1.08rem; font-weight: 700; text-decoration: none; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; text-decoration: none; }
+  .hero { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); color: #fff; }
+  .hero-inner { max-width: 1120px; margin: 0 auto; padding: 32px 22px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.76rem; opacity: 0.88; }
+  .hero h1 { font-size: 2.2rem; line-height: 1.14; margin: 8px 0 12px; max-width: 860px; }
+  .hero p { max-width: 820px; color: rgba(255,255,255,0.92); }
+  .layout { max-width: 1120px; margin: 28px auto; padding: 0 22px 48px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 26px; align-items: start; }
+  .article { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .meta { color: #6b7280; font-size: 0.92rem; margin-bottom: 16px; }
+  .article h2 { color: #3f1890; font-size: 1.42rem; margin: 28px 0 12px; line-height: 1.25; }
+  .article h3 { color: #3f1890; font-size: 1.08rem; margin: 18px 0 10px; }
+  .article p { color: #4b5563; margin-bottom: 14px; }
+  .article ul, .article ol { padding-left: 22px; margin: 12px 0 18px; color: #4b5563; }
+  .article li { margin-bottom: 8px; }
+  .article table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font-size: 0.95rem; }
+  .article th { background: #5b21b6; color: #fff; text-align: left; padding: 12px; }
+  .article td { padding: 12px; border: 1px solid #e5e7eb; vertical-align: top; }
+  .article tr:nth-child(even) td { background: #f5f3ff; }
+  .callout { background: #f3e8ff; border-left: 4px solid #5b21b6; border-radius: 8px; padding: 18px; margin: 18px 0 22px; }
+  .callout p { margin-bottom: 0; color: #4b5563; }
+  .emergency { background: #fef2f2; border-left: 4px solid #dc2626; border-radius: 8px; padding: 18px; margin: 18px 0 22px; }
+  .emergency p { margin-bottom: 0; color: #7f1d1d; font-weight: 600; }
+  .note { background: #fff7ed; border-left: 4px solid #c2410c; border-radius: 8px; padding: 16px; margin: 18px 0 22px; }
+  .note p { margin-bottom: 0; color: #4b5563; }
+  .widget { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); padding: 22px; margin: 28px 0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .widget h3 { color: #fff; margin-top: 0; margin-bottom: 10px; font-size: 1.08rem; }
+  .widget p { color: rgba(255,255,255,0.92); margin-bottom: 14px; font-size: 0.96rem; }
+  .widget form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .widget input { flex: 1; min-width: 200px; padding: 10px 12px; border: none; border-radius: 6px; font-size: 0.95rem; }
+  .widget button { background: #fff; color: #5b21b6; padding: 10px 20px; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 0.95rem; }
+  .widget-disclaimer { color: rgba(255,255,255,0.75); font-size: 0.8rem; margin-top: 10px; margin-bottom: 0; }
+  .sidebar { position: sticky; top: 18px; display: grid; gap: 18px; }
+  .sidebar-panel { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .sidebar-panel h3 { color: #3f1890; font-size: 1rem; margin-bottom: 10px; }
+  .sidebar-panel p, .sidebar-panel li { color: #4b5563; font-size: 0.92rem; }
+  .sidebar-panel ul { padding-left: 18px; }
+  .sidebar-panel a { color: #5b21b6; text-decoration: underline; }
+  .sidebar-newsletter { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); color: #fff; }
+  .sidebar-newsletter h3, .sidebar-newsletter p { color: #fff; }
+  .sidebar-newsletter input { width: 100%; padding: 10px 11px; border: none; border-radius: 6px; margin: 10px 0 8px; }
+  .sidebar-newsletter button { width: 100%; padding: 10px; border: none; border-radius: 6px; background: #fff; color: #5b21b6; font-weight: 700; cursor: pointer; }
+  details { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 16px; margin: 0 0 12px; background: #fff; }
+  summary { cursor: pointer; font-weight: 700; color: #3f1890; }
+  details p { margin-top: 10px; margin-bottom: 0; color: #4b5563; }
+  .footer { background: #3f1890; color: rgba(255,255,255,0.75); margin-top: 32px; }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 20px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .footer a { color: rgba(255,255,255,0.9); text-decoration: none; }
+  @media (max-width: 840px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .hero h1 { font-size: 1.92rem; }
+  }
+</style>
+
+
+
+<style id="feed-content">article.article a{color:#0066cc;text-decoration:none}article.article a:visited{color:#0052a3}article.article a:hover{color:#0066cc;text-decoration:underline}#feed-form input,#feed-form select{width:100%;padding:10px;font:inherit}#feed-form input#feed-weight{width:68%}#feed-form select#feed-unit{width:28%}#feed-form button{padding:10px 14px;font:inherit;cursor:pointer}#feed-result{margin-top:14px}article.article .callout h2{margin-top:0}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "How Much Do Labrador Owners Actually Feed? Real Cups-per-Day by Weight, Age and Activity",
+ "description": "How much to feed a Labrador? See real owner amounts, a cups-per-day calculator by weight, age and activity, and the vet formula behind every bag guide.",
+ "author": {
+  "@type": "Organization",
+  "name": "Lab Care Research Team"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Labrador Retriever Care"
+ },
+ "datePublished": "2026-11-01",
+ "dateModified": "2026-11-01",
+ "mainEntityOfPage": "https://labrador-retriever-care.github.io/how-much-feed-labrador.html"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "How many cups of food should a 70 lb Lab eat?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "By the standard formula, a neutered adult Lab at a 70 lb ideal weight needs about 1,500 kcal a day, which is roughly 3.7 to 5 cups of a food with 300 to 400 kcal per cup. Subtract treats, then adjust by body condition every few weeks."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Should I follow the feeding guide on the bag?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Use it as a starting point, not a rule. Bag guides cover a wide range of dogs, and many Lab owners in forum threads report feeding less than the bag suggests while keeping a visible waist. Your dog's ribs and waist are the final judge."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How many times a day should I feed my Labrador?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Most owners split an adult Lab's daily amount into two meals. Puppies usually get three or more meals, and forum owners describe moving to two meals around six months, mainly for convenience. The total for the day matters more than the number of meals."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "My Lab is always hungry. Am I underfeeding?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not necessarily. A 2024 University of Cambridge study found around 25% of Labradors carry a POMC gene mutation that makes them hungry again sooner between meals. Check ribs and waist: if they are easy to feel and see, your Lab is getting enough. Puzzle feeders and scattered kibble make meals last longer."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Should I feed my Lab by cups or by grams?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Grams are more accurate. Dry foods can range from about 217 to 440 kcal per cup, and scooping varies from day to day. Weighing the daily ration on a kitchen scale removes both problems."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do neutered Labs need less food?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Usually, yes. The Pet Nutrition Alliance worksheet gives 1.6 x resting energy for a neutered adult versus 1.8 x for an intact one, about 11% less. In practice that is a small cut you confirm with regular body checks."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "VideoObject",
+ "name": "How Much Should I Feed My LABRADOR",
+ "description": "Dog trainer Will Atherton explains feeding routines and tips for Labradors, with chapters on puppy and adult feeding guides.",
+ "thumbnailUrl": "https://i.ytimg.com/vi/1dbLauzR7KM/hqdefault.jpg",
+ "uploadDate": "2021-06-10T00:00:00+00:00",
+ "embedUrl": "https://www.youtube-nocookie.com/embed/1dbLauzR7KM"
+}</script>
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="How Much to Feed a Labrador: Real Cups per Day">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://labrador-retriever-care.github.io/how-much-feed-labrador.html">
+<meta property="og:description" content="How much to feed a Labrador? See real owner amounts, a cups-per-day calculator by weight, age and activity, and the vet formula behind every bag guide.">
+<meta property="og:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Much to Feed a Labrador: Real Cups per Day">
+<meta name="twitter:description" content="How much to feed a Labrador? See real owner amounts, a cups-per-day calculator by weight, age and activity, and the vet formula behind every bag guide.">
+<meta name="twitter:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<!-- social-cards:end -->
+<style>.hero-inner.with-photo{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:48px;grid-template-rows:auto auto 1fr;align-items:start}.hero-inner.with-photo>*{grid-column:1}.hero-inner.with-photo>.hero-photo{grid-column:2;grid-row:1/span 3;margin:0;align-self:center}.hero-photo img{display:block;width:100%;height:auto;border-radius:8px}.hero-photo figcaption{font-size:11px;color:inherit;opacity:.75;margin-top:4px}@media(max-width:860px){.hero-inner.with-photo{display:block}.hero-photo{display:none}}</style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #5b21b6;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #481a91;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+/* links blue: the most recognisable clickable colour (owner 2026-10-13); not the bar, footer, buttons or cards */
+a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]){color:#0066cc!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):visited{color:#0052a3!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):hover{text-decoration:underline}
+/* site name always readable on the bar, whatever the article CSS does with links (owner 2026-10-13) */
+.sc-topbar .sc-topbar-brand,.sc-topbar .sc-topbar-brand:visited,.sc-topbar .sc-topbar-brand:hover{color:#fff!important}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
+<style id="sc-font">body{font-family:'Palatino Linotype', 'Book Antiqua', serif}body h1,body h2,body h3{font-family:'Palatino Linotype', 'Book Antiqua', serif}</style>
+<style id="sc-labrador-design">
+:root{--p:#f5f8f3;--i:#1d3326;--m:#55665a;--l:#d6e2d5;--d:#23402e;--od:#f1f7ee;--a:#e8c26a;--ai:#6b5418;--card:#ffffff;--bar:#23402e;--bart:#f1f7ee;--r:16px;--hf:'Segoe UI','Helvetica Neue',Arial,sans-serif;--bf:Georgia,'Times New Roman',serif;--p2:#f3efdd}
+body{background:var(--p)!important;color:var(--i);font-family:var(--bf)!important}html body :is(h1,h2,h3,h4){font-family:var(--hf)!important}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
+header.sc-topbar{background:var(--bar)!important;color:var(--bart);box-shadow:none;border-bottom:3px solid var(--a);position:sticky;top:0;z-index:100}
+header.sc-topbar .sc-topbar-inner{max-width:1240px;height:auto;min-height:68px;padding:10px 28px;gap:18px}
+header.sc-topbar a.sc-topbar-brand:is(#_,a),header.sc-topbar a.sc-topbar-brand:is(#_,a):visited{color:var(--bart)!important;font:800 1.4rem/1.1 var(--hf);letter-spacing:-.02em;text-transform:none}
+header.sc-topbar .sc-topbar-nav{gap:2px;margin:0;padding:0;flex-wrap:wrap}
+header.sc-topbar .sc-topbar-nav a{display:block;color:var(--bart);padding:10px 13px;min-height:44px;border-radius:var(--r);font-weight:600;font-size:.86rem}
+header.sc-topbar .sc-topbar-nav a:hover,header.sc-topbar .sc-topbar-nav a[aria-current="page"]{background:var(--bart);color:var(--bar);text-decoration:none}
+.breadcrumb{background:transparent!important;border:0!important}.breadcrumb-inner{max-width:1240px!important;margin:0 auto;padding:14px 28px;font-size:.78rem;color:var(--m)}
+.sd-cover{position:relative;max-width:1184px;margin:6px auto 34px;overflow:hidden;border-radius:var(--r)}
+.sd-cover h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 18px;color:inherit;text-transform:none;text-wrap:balance}
+.sd-cover .intro{font-size:1.06rem;line-height:1.75;margin:0 0 20px;max-width:46ch;color:inherit;opacity:.88}
+.sd-cover .categories{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.sd-cover .cat-tag{border-radius:var(--r);padding:7px 12px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--card);color:var(--ai);border:1px solid var(--a)}
+.sd-art{min-height:220px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%23e8c26a'%3E%3Cellipse cx='20' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='44' cy='18' rx='6' ry='8'/%3E%3Cellipse cx='9' cy='34' rx='5' ry='7'/%3E%3Cellipse cx='55' cy='34' rx='5' ry='7'/%3E%3Cpath d='M32 28c-10 0-18 12-18 20 0 6 6 8 10 6 4-2 6-2 8-2s4 0 8 2c4 2 10 0 10-6 0-8-8-20-18-20z'/%3E%3C/g%3E%3C/svg%3E") 0 0/56px 56px repeat}
+.page-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
+.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-content:start;background:transparent!important;box-shadow:none!important;padding:0!important;border:0!important}
+.main-content>:not(article){grid-column:1/-1}
+.main-content>article{position:relative;min-width:0;margin:0!important;padding:26px!important;background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none;transition:transform .15s,box-shadow .15s}
+.main-content>article h2{font-size:1.3rem!important;line-height:1.25!important;margin:0 0 12px!important}
+.main-content>article h2 a::after{content:"";position:absolute;inset:0}
+.main-content>article p{color:var(--m)!important;font-size:.92rem!important;line-height:1.7}
+.main-content>article p:first-of-type{color:var(--ai)!important;font-size:.72rem!important;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.sidebar :is(.sidebar-about,.sidebar-links,.sidebar-panel){background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none!important}
+.sidebar :is(h3,h4){color:var(--ai)!important;font-size:.76rem!important;letter-spacing:.1em;text-transform:uppercase}
+.sidebar-about strong{color:var(--i)}
+.hero{background:#23402e!important;color:#f1f7ee!important;border-bottom:4px solid var(--a)}
+.hero h1{color:#f1f7ee!important;letter-spacing:-.02em;text-transform:none}.hero p{color:#f1f7ee!important;opacity:.9}
+.layout{max-width:1240px!important}.hero-inner{max-width:1240px!important;padding-left:22px;padding-right:22px}
+.article,article.article{background:var(--card)!important;border:1px solid var(--l);border-radius:var(--r)!important;box-shadow:none!important}
+.article h2{color:var(--i);border-bottom:2px solid var(--a);padding-bottom:6px}.article h3{color:var(--i)}
+.article th{background:var(--p2)!important;color:var(--i)!important}
+.article blockquote{border-left:4px solid var(--a);background:var(--p2);margin:22px 0;padding:14px 20px}
+.wrap .panel{background:var(--card)!important;border:1px solid var(--l);border-top:5px solid var(--a);border-radius:var(--r)!important;box-shadow:none!important}
+.wrap .panel h1{color:var(--i);text-transform:none}
+footer.sc-footer{background:var(--d)!important;color:var(--od)!important;border-top:6px solid var(--a);padding:34px 20px;margin-top:48px}
+footer.sc-footer a{color:var(--od)!important;display:inline-block;padding:10px 4px}
+
+.sd-cover{display:grid;grid-template-columns:1fr 260px;gap:28px;align-items:end;padding:40px 36px;background:var(--p2);border-left:12px solid var(--a);color:var(--i)}
+.sd-cover .intro{color:var(--m);opacity:1}
+.sd-art{min-height:220px;border-radius:var(--r);background-color:var(--d)}
+.main-content>article{border:0!important;border-radius:calc(var(--r) + 4px)!important;box-shadow:0 6px 22px rgba(0,0,0,.06)}
+.main-content>article:first-of-type{grid-column:1/-1;background:var(--p2)!important;padding:34px!important}
+.main-content>article:first-of-type h2{font-size:1.9rem!important}
+.main-content>article:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.1)}
+@media(max-width:900px){.page-wrap{grid-template-columns:minmax(0,1fr)!important}.main-content{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){header.sc-topbar .sc-topbar-inner{display:block;padding:14px 16px}header.sc-topbar a.sc-topbar-brand:is(#_,a){display:block;margin-bottom:10px}
+header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}header.sc-topbar .sc-topbar-nav a{padding:11px 2px;text-align:center;font-size:.8rem}
+.breadcrumb-inner{padding:12px 16px}.sd-cover{display:block!important;margin:4px 16px 26px;padding:0}.sd-cover-text,.sd-cover.sd-centered{padding:30px 22px}
+.sd-cover h1{font-size:2.4rem}.sd-art{min-height:90px;margin:0;box-shadow:none}
+.sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Labrador Retriever Guide</a>
+    <nav>
+      <ul class="sc-topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html" aria-current="page">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<div class="hero">
+<div class="hero-inner with-photo"><p class="eyebrow">Labrador Retriever feeding</p><h1>How Much Do Labrador Owners Actually Feed? Real Cups-per-Day by Weight, Age and Activity</h1><p>The vet formula behind every bag guide, what real Lab owners weigh out each day, and a calculator for your own dog.</p>
+    <figure class="hero-photo"><img src="/assets/home-editorial-20261025.webp" alt="yellow Labrador Retriever walking along a lakeside path - AI-generated illustration" width="1536" height="1024" loading="lazy" decoding="async"><figcaption>AI-generated illustration.</figcaption></figure>
+  </div></div>
+<div class="layout" data-follow-parent="true">
+  <article class="article">
+<nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">How Much to Feed a Labrador</span></nav>
+
+<p>If you have ever stood over a food bowl wondering how much to feed a Labrador while your dog stares at you like they haven't eaten in a week, you are in good company. Many Lab owners have heard a vet say "they're a bit heavy," felt a sting of guilt, and then been told to "just follow the bag," which can be a cup or two more than a real Lab seems to need. This guide puts the formula vets use next to what real owners report feeding, so you can find your own number without the shame.</p>
+
+<div class="callout"><p><strong>Quick answer:</strong> Most adult Labradors need roughly 1,000 to 1,800 kcal a day, depending on ideal weight, neutering and activity. That works out to about 2.5 to 5 cups of dry food, but only once you know your food's kcal per cup, because the same "cup" can differ by about twofold between brands. Real owners in a Labrador forum thread fed their adult Labs anywhere from 140 g to 500 g of kibble a day. Start with the calculator below, then adjust every two to three weeks by what your hands tell you about your dog's ribs and waist.</p></div>
+
+<p>The calculator uses the standard veterinary energy formula, your Lab's ideal weight and the calorie figure printed on your bag. It gives a starting range, not a prescription.</p>
+
+<section aria-labelledby="feed-calc-heading" class="callout" id="feed-calc">
+<h2 id="feed-calc-heading">Labrador cups-per-day calculator</h2>
+<p>Enter your dog's details and the kcal per cup from your food bag (look for "calorie content" or "metabolizable energy"). Puppies use today's weight; adults use their ideal weight.</p>
+<form id="feed-form">
+<p><label for="feed-weight">Weight</label><br><input id="feed-weight" type="number" min="2" max="140" step="0.5" value="65"> <select id="feed-unit" aria-label="Weight unit"><option value="lb">lb</option><option value="kg">kg</option></select></p>
+<p><label for="feed-age">Life stage</label><br><select id="feed-age"><option value="adult">Adult (fully grown)</option><option value="pup">Growing puppy</option></select></p>
+<p><label for="feed-neuter">Spayed or neutered?</label><br><select id="feed-neuter"><option value="yes">Yes</option><option value="no">No, intact</option></select></p>
+<p><label for="feed-activity">Typical day</label><br><select id="feed-activity"><option value="low">Couch Lab: short walks, mostly resting</option><option value="normal" selected>Average: 1 to 2 hours of walks and play</option><option value="high">Very active: daily runs, swims, fieldwork</option></select></p>
+<p><label for="feed-hungry">Is your Lab "always starving," even right after meals?</label><br><select id="feed-hungry"><option value="no">No, normal appetite</option><option value="yes">Yes, constant food-seeking</option></select></p>
+<p><label for="feed-bcs">Ribs and waist today</label><br><select id="feed-bcs"><option value="ideal">Ribs easy to feel, waist visible from above</option><option value="over">Ribs hard to feel, little or no waist</option><option value="under">Ribs, spine and hips stand out</option></select></p>
+<p><label for="feed-kcal">Your food's kcal per cup</label><br><input id="feed-kcal" type="number" min="150" max="700" step="1" value="350"></p>
+<p><label for="feed-treats">Treats and chews per day (kcal, rough guess)</label><br><input id="feed-treats" type="number" min="0" max="1500" step="10" value="100"></p>
+<button type="submit">Work out my Lab's cups</button> <button type="reset">Reset</button>
+</form>
+<div id="feed-result" role="status" aria-live="polite" aria-atomic="true"><p>Your result will appear here.</p></div>
+<noscript><p>Without JavaScript: resting energy = 70 x (weight in kg to the power 0.75). Multiply by about 1.6 for a neutered adult, then divide by your food's kcal per cup.</p></noscript>
+</section>
+
+<h2>How much should you feed a Labrador per day?</h2>
+<p>A typical neutered adult Lab at a 65 lb ideal weight needs about 1,400 kcal a day by the standard formula, which is roughly 3.5 to 4.7 cups depending on the food. Many real Labs end up thriving on less.</p>
+<p>Vets start with the resting energy requirement (RER), the calories a dog burns lying still. The <a href="https://petnutritionalliance.org/wp-content/uploads/2023/03/MER.RER_.PNA_.pdf">Pet Nutrition Alliance calorie worksheet</a> gives it as RER = 70 x (body weight in kg) to the power of 0.75, and then multiplies it by a life-stage factor: 1.6 for a neutered adult, 1.8 for an intact adult, 1.2 to 1.4 for an inactive or overweight-prone dog, and 2 to 3 for growing puppies. The same worksheet warns that individual animals can vary by as much as 50% from the predicted values, so the result is where you begin, not where you end.</p>
+<p>In this video, dog trainer Will Atherton talks Lab owners through feeding routines and tips, then through puppy and adult feeding guides:</p>
+<div style="position:relative;width:100%;aspect-ratio:16/9;margin:12px 0 20px"><iframe src="https://www.youtube-nocookie.com/embed/1dbLauzR7KM" title="How Much Should I Feed My LABRADOR - Will Atherton Labrador Show" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen></iframe></div>
+<h3>Why the "right" amount is a range</h3>
+<p>Two Labs with the same weight can need very different amounts. Neutering, muscle, coat, climate, how much they swim and simply individual metabolism all shift the number. That is why the factors come as ranges, and why experienced owners talk about "feeding the dog in front of you."</p>
+<h3>Ideal weight, not current weight</h3>
+<p>For an adult, use the weight your dog <em>should</em> be. If your Lab is carrying a few extra pounds and you enter today's weight, the formula will happily keep them there.</p>
+
+<h2>Labrador calories and cups by weight: a comparison table</h2>
+<p>This table runs the formula for common adult Lab weights. The cup columns show the same calories with a lighter food (300 kcal per cup) and a denser one (400 kcal per cup), so you can see how much the bag matters.</p>
+<table><caption>Estimated daily calories and cups for adult Labradors (RER = 70 x kg^0.75; example foods at 300 and 400 kcal per cup)</caption><thead><tr><th>Ideal weight</th><th>Resting (RER)</th><th>Couch Lab (1.3x)</th><th>Neutered adult (1.6x)</th><th>Intact adult (1.8x)</th><th>Cups at 1.6x: 300 / 400 kcal food</th></tr></thead><tbody>
+<tr><td>45 lb (20.4 kg)</td><td>672 kcal</td><td>874 kcal</td><td>1,076 kcal</td><td>1,210 kcal</td><td>3.6 / 2.7</td></tr>
+<tr><td>55 lb (24.9 kg)</td><td>781 kcal</td><td>1,016 kcal</td><td>1,250 kcal</td><td>1,407 kcal</td><td>4.2 / 3.1</td></tr>
+<tr><td>65 lb (29.5 kg)</td><td>886 kcal</td><td>1,151 kcal</td><td>1,417 kcal</td><td>1,594 kcal</td><td>4.7 / 3.5</td></tr>
+<tr><td>75 lb (34.0 kg)</td><td>986 kcal</td><td>1,282 kcal</td><td>1,578 kcal</td><td>1,775 kcal</td><td>5.3 / 3.9</td></tr>
+<tr><td>85 lb (38.6 kg)</td><td>1,083 kcal</td><td>1,408 kcal</td><td>1,733 kcal</td><td>1,950 kcal</td><td>5.8 / 4.3</td></tr>
+</tbody></table>
+<div class="note"><p><strong>How to read this:</strong> these are calculated starting points, before treats. The 1.3x column is the middle of the 1.2 to 1.4 range for inactive dogs. If your Lab looks right on less, your Lab is right and the table is wrong.</p></div>
+
+<h2>How much do Lab owners actually feed?</h2>
+<p>Less than the formula suggests, in many homes, and the spread is wide. In one owner thread, adult Labs of roughly the same size were fed anything from 200 g to over 300 g of kibble a day, and owners judged success by how the dog looked, not by a number.</p>
+<p>A 2019 thread called <a href="https://mylabradorfriends.com/threads/slim-on-450g-a-day.2561/">"Slim on 450g a day...." on the My Labrador Friends forum</a> started when an owner was surprised that a visiting working-line dog was fed 450 g a day in two meals. Other members then posted what their own Labs eat. Most are UK owners who weigh food in grams:</p>
+<table><caption>Daily kibble reported by Lab owners, My Labrador Friends forum, August 2019 (selected replies)</caption><thead><tr><th>Dog's weight</th><th>Kibble per day</th><th>What the owner added</th></tr></thead><tbody>
+<tr><td>25 to 26 kg (55 to 57 lb), spayed</td><td>300 to 320 g</td><td>Breed-specific adult kibble</td></tr>
+<tr><td>27 kg (60 lb)</td><td>200 g</td><td>Described as "a healthy 27Kg"</td></tr>
+<tr><td>29 to 29.8 kg (64 to 66 lb)</td><td>300 to 350 g</td><td>Two meals plus training rewards; walks recently increased</td></tr>
+<tr><td>32 kg (71 lb)</td><td>about 350 g</td><td>Including 80 g of training kibble; owner says about 2 kg over</td></tr>
+<tr><td>40 kg (88 lb)</td><td>about 400 g</td><td>Two meals plus titbits; vet happy with the dog's shape</td></tr>
+<tr><td>46 kg (101 lb)</td><td>430 to 500 g</td><td>Plus bones and scraps</td></tr>
+</tbody></table>
+<p>The two most useful lessons sit in the comments. First, owners cut portions when life changed: one reduced food by 25 g after walks were shortened, another halved a dog's ration while exercise was restricted. Second, several owners said they do not weigh food at all; one wrote that they "100% rely on what the dog looks like," adjusting as they go.</p>
+<h3>The puppy owner who trusted their eyes</h3>
+<p>Puppy owners face the same puzzle. In a 2018 thread on <a href="https://thelabradorforum.com/threads/how-much-food-should-my-lab-be-eating.25787/">The Labrador Forum</a>, the owner of a 7-month-old pup approaching 70 lb said the bag suggested 6 3/4 to 7 1/4 cups a day, which felt like too much because the dog was getting chubby. Another owner said their bag called for 3 to 3.5 cups for their puppies, and they fed "more like 2-2.5 cups." A third owner, whose pup was losing her waist on the pack amount, cut each meal by 10 grams at a time until the dog looked right again.</p>
+<div class="note"><p><strong>Keep in mind:</strong> forum replies are a small, self-selected group, and kibbles differ in calories per gram. These numbers show the real-world spread, not targets for your dog.</p></div>
+
+<h2>Why does my Lab act hungry all the time?</h2>
+<p>For about a quarter of Labs, it is partly genetic. A gene change makes them feel hungry again sooner between meals, so a begging Lab is not proof that you are underfeeding.</p>
+<p>If you have been made to feel that a food-obsessed Lab is a training failure, this is worth reading slowly. A <a href="https://www.cam.ac.uk/research/news/genetic-mutation-in-a-quarter-of-all-labradors-hard-wires-them-for-obesity">University of Cambridge study published in March 2024</a> looked at 87 adult pet Labradors and found that around 25% of Labs carry a mutation in the POMC gene. Dogs with it got hungry between meals more quickly, tried significantly harder in a "sausage in a box" test, and burned around 25% fewer calories at rest than dogs without it.</p>
+<h3>What that means at the bowl</h3>
+<p>A Lab like this can need fewer calories than the table suggests while begging harder than ever. The researchers suggest making a daily ration last longer: split it up, use puzzle feeders, or scatter it in the garden. In our calculator, answering "constant food-seeking" moves the estimate toward the lower, overweight-prone factor. A Lab who shadows you into the kitchen may also simply be a <a href="/labrador-velcro-dog-separation-anxiety.html">Velcro Lab who follows you everywhere</a>, which is a separate habit from hunger.</p>
+
+<h2>How much should a Labrador puppy eat?</h2>
+<p>A growing Lab puppy needs about two to three times its resting energy, calculated on today's weight, so the amount climbs every few weeks as the pup grows.</p>
+<p>The Pet Nutrition Alliance worksheet gives growth as 2 to 3 x RER. Younger, faster-growing pups sit nearer the top of that range and older pups nearer the bottom. Because a pup's weight changes so quickly, re-run the calculator every couple of weeks rather than setting one amount at 8 weeks and forgetting it.</p>
+<table><caption>Estimated daily calories for a growing Lab puppy (2 to 3 x RER, current weight)</caption><thead><tr><th>Puppy's weight today</th><th>Resting (RER)</th><th>Growth range (2x to 3x)</th><th>Cups at 350 kcal per cup</th></tr></thead><tbody>
+<tr><td>20 lb (9.1 kg)</td><td>366 kcal</td><td>732 to 1,098 kcal</td><td>2.1 to 3.1</td></tr>
+<tr><td>40 lb (18.1 kg)</td><td>615 kcal</td><td>1,231 to 1,846 kcal</td><td>3.5 to 5.3</td></tr>
+<tr><td>60 lb (27.2 kg)</td><td>834 kcal</td><td>1,668 to 2,502 kcal</td><td>4.8 to 7.1</td></tr>
+</tbody></table>
+<h3>Puppy food is not adult food</h3>
+<p>Feed a food labeled for growth and use that food's own kcal figure, since puppy and adult formulas differ. Growth is also the time when exercise questions come up; our look at the <a href="/labrador-5-minute-per-month-puppy-exercise-rule.html">5-minute-per-month puppy exercise rule</a> covers what owners report there.</p>
+
+<h2>Does activity change how much a Lab should eat?</h2>
+<p>Yes, but less than most owners think. Moving from a couch Lab to an average one is roughly the jump from 1.3x to 1.6x RER, about 250 to 300 kcal a day for a 65 lb dog, or under one cup.</p>
+<h3>Very active Labs</h3>
+<p>The common worksheets stop at 1.8x for intact adults and do not give a single number for hard-working dogs. If your Lab runs, retrieves or swims daily, start at the top of the adult range and add food in small steps only while their ribs stay easy to feel. Swimming in particular burns energy; if you are building up to it, see our guide to <a href="/teach-labrador-to-swim.html">teaching a Labrador to swim</a>.</p>
+<h3>As Labs slow down</h3>
+<p>Many Labs settle down as they mature, and a calmer dog usually burns fewer calories. Our article on <a href="/labrador-calm-down-age.html">when Labradors calm down</a> describes that shift; it is a good moment to re-check portions.</p>
+
+<h2>Cups, grams and calories: why "one cup" can mislead</h2>
+<p>A cup is a volume, not an amount of energy. Calorie density varies so much between foods that switching brands at "the same three cups" can quietly change your Lab's intake by hundreds of calories.</p>
+<p>A study by Tufts veterinary nutritionists Deborah Linder and Lisa Freeman, <a href="https://pubmed.ncbi.nlm.nih.gov/20043803/">published in the Journal of the American Veterinary Medical Association in 2010</a>, measured dry dog foods marketed for weight loss and found calorie densities from 217 to 440 kcal per cup. That is a twofold range within one category of food. A level cup also changes with kibble shape and with how you scoop, which is why many owners switch to a kitchen scale and weigh in grams.</p>
+<h3>Where to find your number</h3>
+<p>Look for the calorie statement on the bag, usually written as kcal/kg and kcal/cup. If only kcal/kg is given, weigh out a level cup once and do the math: grams per cup x kcal/kg / 1,000 = kcal per cup.</p>
+
+<h2>Step by step: find your Lab's real daily amount</h2>
+<p>Use this checklist once now and again whenever life changes: a new food, a new routine, neutering, or a slower season.</p>
+<ol>
+<li><strong>Find the kcal per cup</strong> on your bag, or work it out from kcal/kg as above.</li>
+<li><strong>Decide on an ideal weight</strong> for an adult, or use today's weight for a puppy.</li>
+<li><strong>Run the calculator</strong> and take the middle of the range as day one.</li>
+<li><strong>Subtract treats.</strong> Chews, training rewards and table scraps all count.</li>
+<li><strong>Weigh the daily ration</strong> each morning, split it into meals and keep training treats out of that bag.</li>
+<li><strong>Score the body every two to three weeks.</strong> On the <a href="https://wsava.org/wp-content/uploads/2020/01/Body-Condition-Score-Dog.pdf">WSAVA body condition chart</a>, the ideal dog has ribs easily felt with minimal fat covering, a waist easily seen from above and a visible abdominal tuck. At a 7 of 9, ribs are felt only with difficulty under heavy fat cover.</li>
+<li><strong>Adjust in small steps.</strong> Change portions by about a tenth at a time, the way forum owners trimmed 10 g to 25 g, and wait a few weeks before judging.</li>
+<li><strong>Write it down.</strong> A note on the fridge with the date, grams and body check stops "a bit extra" from creeping in.</li>
+</ol>
+<p>If you walk more than one Lab, keep each dog's ration separate even if their walks are shared; our guide to <a href="/walk-two-labradors.html">walking two Labradors</a> covers the routine side.</p>
+
+<h2>Common feeding mistakes Lab owners make</h2>
+<ul>
+<li><strong>Feeding the top of the bag range.</strong> Bag guides are written to cover many dogs. In the forum threads above, several owners fed well under them.</li>
+<li><strong>Scooping instead of weighing.</strong> A heaped cup and a level cup can differ a lot, every meal.</li>
+<li><strong>Forgetting the treats.</strong> 100 kcal of chews a day is real food for a dog eating 1,400 kcal.</li>
+<li><strong>Using current weight for an overweight adult.</strong> The formula then keeps the extra pounds.</li>
+<li><strong>Reading begging as hunger.</strong> Up to a quarter of Labs may be wired to feel hungry sooner. Slow the ration down instead of adding to it.</li>
+<li><strong>Not adjusting when life changes.</strong> Shorter walks, neutering or a calmer adult phase all lower needs.</li>
+<li><strong>Blaming yourself.</strong> A Lab who gained weight is not proof you failed. You now have a method, and small changes add up.</li>
+</ul>
+
+<div style="border-left:4px solid #5b21b6;background:#f5f3ff;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;"><p style="margin:0;font-size:0.93rem;color:#4b5563;"><strong style="color:#5b21b6;">Lab Care Research Team</strong> — Reviewed for accuracy. We distinguish between established evidence and general owner consensus in our guides.</p></div>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How many cups of food should a 70 lb Lab eat?</summary><p>By the standard formula, a neutered adult Lab at a 70 lb ideal weight needs about 1,500 kcal a day, which is roughly 3.7 to 5 cups of a food with 300 to 400 kcal per cup. Subtract treats, then adjust by body condition every few weeks.</p></details>
+<details><summary>Should I follow the feeding guide on the bag?</summary><p>Use it as a starting point, not a rule. Bag guides cover a wide range of dogs, and many Lab owners in forum threads report feeding less than the bag suggests while keeping a visible waist. Your dog's ribs and waist are the final judge.</p></details>
+<details><summary>How many times a day should I feed my Labrador?</summary><p>Most owners split an adult Lab's daily amount into two meals. Puppies usually get three or more meals, and forum owners describe moving to two meals around six months, mainly for convenience. The total for the day matters more than the number of meals.</p></details>
+<details><summary>My Lab is always hungry. Am I underfeeding?</summary><p>Not necessarily. A 2024 University of Cambridge study found around 25% of Labradors carry a POMC gene mutation that makes them hungry again sooner between meals. Check ribs and waist: if they are easy to feel and see, your Lab is getting enough. Puzzle feeders and scattered kibble make meals last longer.</p></details>
+<details><summary>Should I feed my Lab by cups or by grams?</summary><p>Grams are more accurate. Dry foods can range from about 217 to 440 kcal per cup, and scooping varies from day to day. Weighing the daily ration on a kitchen scale removes both problems.</p></details>
+<details><summary>Do neutered Labs need less food?</summary><p>Usually, yes. The Pet Nutrition Alliance worksheet gives 1.6 x resting energy for a neutered adult versus 1.8 x for an intact one, about 11% less. In practice that is a small cut you confirm with regular body checks.</p></details>
+
+<h2>The bottom line</h2>
+<p>So, how much to feed a Labrador? Most adult Labs land somewhere between about 1,000 and 1,800 kcal a day, which is 2.5 to 5 cups of most dry foods, and real owners often feed less than the bag says. Work out your number from your food's kcal per cup, weigh it, count the treats and let your Lab's ribs and waist guide every small change. If you have struggled with this before, that is not a failure; it is just the starting point most Lab owners share.</p>
+
+<div class="ai-note" style="border-left:4px solid #5b21b6;background:#f7f9fa;padding:12px 16px;margin:24px 0;font-size:0.9rem;color:#4b5563"><strong>AI-assisted article · Lab Care Research Team.</strong> Lab Care Research Team uses AI tools for source aggregation and first-draft outlines. All claims are reviewed by our editorial team against current breed health literature before publication. The calorie and cup figures are calculated from published veterinary formulas and are starting points, not an individual feeding plan.</div>
+<script>
+(function(){
+ function add(area,tag,text){var el=document.createElement(tag);el.textContent=text;area.appendChild(el);return el;}
+ function fmt(n){return Math.round(n).toLocaleString('en-US');}
+ function cups(n){return (Math.round(n*10)/10).toFixed(1);}
+ var form=document.getElementById('feed-form');
+ form.addEventListener('submit',function(e){
+  e.preventDefault();
+  var area=document.getElementById('feed-result');area.textContent='';
+  var w=parseFloat(document.getElementById('feed-weight').value);
+  var unit=document.getElementById('feed-unit').value;
+  var age=document.getElementById('feed-age').value;
+  var neut=document.getElementById('feed-neuter').value;
+  var act=document.getElementById('feed-activity').value;
+  var hungry=document.getElementById('feed-hungry').value;
+  var bcs=document.getElementById('feed-bcs').value;
+  var kcal=parseFloat(document.getElementById('feed-kcal').value);
+  var treats=parseFloat(document.getElementById('feed-treats').value);
+  if(isNaN(treats)||treats<0) treats=0;
+  if(isNaN(w)||w<=0){add(area,'p','Please enter your dog\'s weight.');return;}
+  if(isNaN(kcal)||kcal<150){add(area,'p','Please enter the kcal per cup printed on your food bag.');return;}
+  var kg=unit==='lb'?w*0.45359237:w;
+  var rer=70*Math.pow(kg,0.75);
+  var lo,hi,label;
+  if(age==='pup'){
+   lo=2;hi=3;label='growing puppy (2 to 3 x RER, today\'s weight)';
+  } else {
+   var base=neut==='yes'?1.6:1.8;
+   lo=base;hi=base;label=(neut==='yes'?'neutered':'intact')+' adult ('+base+' x RER)';
+   if(act==='low'){lo=1.2;hi=1.4;label='inactive adult (1.2 to 1.4 x RER)';}
+   if(act==='high'){lo=base;hi=1.8;label='very active adult ('+(lo===1.8?'1.8':lo+' to 1.8')+' x RER; add food in small steps only while ribs stay easy to feel)';}
+   if(hungry==='yes'&&act!=='low'){lo=Math.min(lo,1.4);label+=', lowered toward 1.4 x for a food-driven Lab';}
+  }
+  var kLo=rer*lo,kHi=rer*hi;
+  add(area,'h3','About '+fmt(kLo)+(hi!==lo?' to '+fmt(kHi):'')+' kcal per day');
+  add(area,'p','Resting energy for '+(Math.round(kg*10)/10)+' kg: '+fmt(rer)+' kcal. Factor used: '+label+'.');
+  var fLo=Math.max(0,kLo-treats),fHi=Math.max(0,kHi-treats);
+  var line='That is about '+cups(fLo/kcal)+(hi!==lo?' to '+cups(fHi/kcal):'')+' cups of your food per day';
+  add(area,'p',line+(treats>0?' after subtracting '+fmt(treats)+' kcal of treats.':'.'));
+  if(treats>0&&treats>0.1*kLo) add(area,'p','Treats are more than a tenth of the daily calories here. Consider using part of the kibble ration as training rewards instead.');
+  if(age==='adult'&&bcs==='over') add(area,'p','Ribs hard to feel: make sure the weight you entered is the ideal weight, not today\'s, and ask your vet to agree a target weight and plan with you.');
+  if(bcs==='under') add(area,'p','Ribs, spine and hips standing out: do not cut food. Ask your vet to check your Lab before changing the amount.');
+  if(age==='pup') add(area,'p','Re-run this every two weeks with the new weight, and use the kcal figure of a food labeled for growth.');
+  if(hungry==='yes') add(area,'p','Food-driven Lab: split the ration into more portions, use a puzzle feeder or scatter kibble so meals last longer.');
+  add(area,'p','Weigh this for two to three weeks, then check ribs and waist and adjust by about a tenth if needed. Individual dogs can differ from the formula by up to 50%.');
+ });
+ form.addEventListener('reset',function(){document.getElementById('feed-result').textContent='Your result will appear here.';});
+})();
+</script>
+
+</article>
+
+  <aside class="sidebar" data-follow-sidebar="existing"><section class="sidebar-panel"><h3>The formula</h3><p>Resting energy = 70 x kg^0.75. Neutered adult: x1.6. Intact: x1.8. Puppy: x2 to 3.</p></section><section class="sidebar-panel"><h3>Cups vary</h3><p>Dry foods can run from about 217 to 440 kcal per cup. Check your bag, then weigh.</p></section><section class="sidebar-panel"><h3>Final judge</h3><p>Ribs easy to feel, waist visible from above. Adjust by about a tenth at a time.</p></section></aside>
+</div>
+
+<script>
+(function() {
+  var _ga4 = "";
+  var _site = "labrador-retriever-care.github.io";
+  var _article = "how-much-feed-labrador";
+  var _startTime = Date.now();
+  var _scrollMarks = {25: false, 50: false, 75: false, 100: false};
+
+  function _send(name, params) {
+    var data = Object.assign({page: _article, site: _site}, params);
+    if (_ga4 && typeof gtag === "function") {
+      gtag("event", name, data);
+    }
+    try {
+      var log = JSON.parse(localStorage.getItem("_ptrack") || "[]");
+      log.push({t: new Date().toISOString(), e: name, d: data});
+      if (log.length > 200) log = log.slice(-200);
+      localStorage.setItem("_ptrack", JSON.stringify(log));
+    } catch(e) {}
+  }
+
+  function _onScroll() {
+    var scrolled = window.scrollY + window.innerHeight;
+    var total = document.documentElement.scrollHeight;
+    var pct = Math.round((scrolled / total) * 100);
+    [25, 50, 75, 100].forEach(function(mark) {
+      if (!_scrollMarks[mark] && pct >= mark) {
+        _scrollMarks[mark] = true;
+        _send("scroll_depth", {depth: mark});
+      }
+    });
+  }
+  window.addEventListener("scroll", _onScroll, {passive: true});
+
+  function _sendTime() {
+    var secs = Math.round((Date.now() - _startTime) / 1000);
+    _send("time_on_page", {seconds: secs});
+  }
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) _sendTime();
+  });
+  window.addEventListener("pagehide", _sendTime);
+
+  document.addEventListener("click", function(e) {
+    var btn = e.target.closest("button");
+    if (btn) {
+      var box = btn.closest(".sidebar-newsletter, [class*='newsletter']");
+      if (box) _send("newsletter_click", {label: btn.textContent.trim().slice(0, 40)});
+    }
+    var link = e.target.closest("a[href]");
+    if (link && !link.href.includes(window.location.hostname)) {
+      _send("outbound_click", {url: link.href.slice(0, 100)});
+    }
+  });
+
+  _send("article_view", {});
+})();
+</script>
+
+
+
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
+  </div>
+  <p>&copy; 2026 labrador-retriever-care.github.io &mdash; Labrador Retriever Guide. All rights reserved.</p>
+</footer>
+</body>
+</html>
