@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Labrador Coat Color Calculator — B and E Genes, Puppy Colors</title>
+<meta name="description" content="Free Labrador coat color calculator: choose the B and E genes of both parents and see the odds of black, chocolate and yellow puppies. Plain-English guide to TYRP1 and MC1R.">
+<link rel="canonical" href="https://labrador-retriever-care.github.io/labrador-coat-color-calculator.html">
+<meta name="robots" content="index, follow">
+<style id="lrc-ds">
+:root{--navy:#1a2744;--choc:#3d1f0f;--cream:#fbf7f0;--page:#fffdf9;--muted:#6b5f53;--line:#d4cdc2;--gold:#c49a2a;--gilt:#8f6e18;--link:#0066cc;
+--display:"Palatino Nova","Palatino","Georgia Pro",Georgia,serif;--body:"Calibri","Candara","Segoe UI","Helvetica Neue",Arial,sans-serif;--r:8px;--wrap:1180px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:18px;line-height:1.7;color:var(--muted);background:var(--cream)}
+a{color:var(--link)}a:visited{color:#0052a3}
+h1,h2,h3{font-family:var(--display);font-weight:400;color:var(--navy);line-height:1.12}
+img{max-width:100%;height:auto}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:9;background:var(--cream);padding:10px 14px;border:2px solid var(--gold)}
+.label{margin:0 0 14px;font:700 12px/1.4 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--gilt)}
+.label b{color:var(--navy)}
+.btn,.btn:visited{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 24px;border-radius:6px;background:var(--navy);color:#fff;font:700 16px/1 var(--body);text-decoration:none;transition:background .15s,transform .15s}
+.btn:hover{background:#131b30;transform:translateY(-1px)}
+.btn.dark,.btn.dark:visited{background:var(--choc);color:var(--cream)}.btn.dark:hover{background:#2e170a}
+.arrow,.arrow:visited{color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:5px}
+.arrow:hover{text-decoration-color:var(--navy)}
+.arrow::after,.btn::after{content:"\2192";font-weight:400}
+/* header — academic encyclopaedia bar */
+.sc-topbar{background:var(--navy);border-bottom:4px solid var(--gold);position:sticky;top:0;z-index:50}
+.sc-topbar-inner{max-width:var(--wrap);margin:0 auto;padding:0 28px;min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.sc-topbar-brand,.sc-topbar-brand:visited{color:#fff!important;text-decoration:none;font:400 24px/1.1 var(--display);letter-spacing:.02em;position:relative;display:inline-flex;align-items:center;gap:8px}
+.sc-topbar-brand span{font:700 12px/1 var(--body);text-transform:uppercase;letter-spacing:.1em;color:var(--gold);opacity:.75}
+.sc-topbar-nav{list-style:none;margin:0;padding:0;display:flex;gap:2px}
+.sc-topbar-nav a,.sc-topbar-nav a:visited{display:block;padding:10px 14px;border-radius:6px;color:rgba(255,255,255,.88);text-decoration:none;font-size:15px;font-weight:600;transition:background .15s}
+.sc-topbar-nav a:hover,.sc-topbar-nav a[aria-current]{background:rgba(255,255,255,.15);color:#fff}
+.sc-topbar-nav .cta a{background:var(--gold);color:var(--navy)}.sc-topbar-nav .cta a:hover{background:var(--gilt)}
+.vol{display:none}
+@media(max-width:860px){.sc-topbar-nav{display:none}.vol{display:block}
+.vol summary{list-style:none;cursor:pointer;width:46px;height:46px;border:2px solid var(--gold);border-radius:6px;display:grid;place-content:center;gap:4px;padding:0 10px;color:#fff;font:700 14px/1 var(--body)}
+.vol summary::-webkit-details-marker{display:none}
+.vol[open] summary{background:rgba(255,255,255,.2)}
+.vol-panel{position:fixed;left:0;right:0;top:68px;bottom:0;overflow:auto;background:var(--cream);padding:24px 20px 48px;border-top:4px solid var(--gold);counter-reset:v}
+.vol-panel>a,.vol-panel>a:visited{counter-increment:v;display:flex;align-items:baseline;gap:14px;padding:18px 6px;border-bottom:1px solid var(--line);color:var(--navy);text-decoration:none;font:400 24px/1.2 var(--display)}
+.vol-panel>a::before{content:"Vol. " counter(v);font:700 11px/1 var(--body);color:var(--gilt);letter-spacing:.08em;width:60px}
+.vol-panel>a:hover{background:var(--page)}
+.vol-panel .minor{display:flex;flex-wrap:wrap;gap:6px 20px;padding:24px 6px 0;border-top:2px solid var(--gold)}
+.vol-panel .minor a{font-size:15px;color:var(--muted)}}
+/* footer — colophon style */
+.sc-footer{background:var(--choc);color:var(--cream);font-size:15px;border-top:6px solid var(--gold)}
+.sc-footer-inner{max-width:var(--wrap);margin:0 auto;padding:40px 28px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px 48px}
+.sc-footer-nav{display:grid;grid-template-columns:repeat(2,minmax(0,max-content));gap:6px 36px;align-content:start}
+.sc-footer a,.sc-footer a:visited{color:var(--gold)}.sc-footer a:hover{color:#fff}
+.sc-footer p{margin:10px 0 0;max-width:520px;opacity:.85}
+.sc-footer .brand{font:400 22px/1 var(--display);color:var(--gold);text-decoration:none}
+/* home sections */
+.sec{max-width:var(--wrap);margin:0 auto;padding:72px 28px}
+.sec h2{font-size:clamp(32px,3.8vw,46px);margin:0 0 14px;letter-spacing:-.01em}
+.sec-lead{margin:0 0 36px;max-width:600px;color:var(--muted)}
+.band{background:var(--page)}
+/* hero — encyclopaedia opening */
+.hero-home{max-width:var(--wrap);margin:0 auto;padding:56px 28px 52px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);gap:44px;align-items:center}
+.hero-home h1{margin:0 0 20px;font-size:clamp(40px,5.6vw,72px);line-height:1;letter-spacing:-.02em}
+.hero-home h1 em{color:var(--choc);font-style:italic}
+.hero-home .intro{margin:0 0 28px;max-width:540px;font-size:20px;color:var(--muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center}
+.hero-figure{position:relative;margin:0;justify-self:center;width:min(380px,100%)}
+.hero-figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 22%;border:2px solid var(--gold);border-radius:4px;box-shadow:0 4px 24px rgba(0,0,0,.08)}
+.hero-figure figcaption{position:absolute;right:0;bottom:-28px;font:italic 12px/1 var(--body);color:var(--gilt);padding:4px 10px;background:var(--cream);border:1px solid var(--gold)}
+/* paths (encyclopaedia volumes) */
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.path{background:var(--page);border:1px solid var(--line);border-bottom:4px solid var(--gold);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:10px;transition:border-color .15s,transform .15s}
+.path:hover{border-bottom-color:var(--navy);transform:translateY(-2px);box-shadow:0 6px 16px rgba(26,39,68,.08)}
+.path svg{width:48px;height:48px;stroke:var(--navy);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.path h3{margin:4px 0 0;font-size:26px}
+.path p{margin:0;color:var(--muted)}
+.path ul{margin:4px 0 10px;padding:0;list-style:none;display:grid;gap:6px;font-size:16px}
+.path li a{text-decoration:none;color:var(--navy)}.path li a:hover{text-decoration:underline}
+.path .arrow{margin-top:auto;align-self:flex-start}
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding:36px 28px;background:var(--page);border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)}
+.num{text-align:center}
+.num b{display:block;font:400 clamp(48px,5vw,64px)/1 var(--display);color:var(--navy)}
+.num b small{display:block;font-size:.35em;margin-top:4px;color:var(--gilt)}
+.num p{margin:12px 0 10px;font-size:15px;color:var(--muted)}
+.num a{font-size:14px}
+/* cards — encyclopaedia entries */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{position:relative;background:var(--page);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--r) var(--r) 0;padding:22px 24px;display:flex;flex-direction:column;gap:8px;transition:border-color .15s,transform .15s}
+.card:hover{border-left-color:var(--navy);transform:translateY(-2px)}
+.card[hidden]{display:none}
+.card .kicker{margin:0;font:700 11px/1.4 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--gilt)}
+.card h2,.card h3{margin:0;font-size:23px;line-height:1.2;font-weight:400}
+.card h2 a,.card h3 a,.card h2 a:visited,.card h3 a:visited{color:var(--navy);text-decoration:none}
+.card h2 a::after,.card h3 a::after{content:"";position:absolute;inset:0}
+.card p{margin:0;font-size:16px;color:var(--muted)}
+.card .card-date{font-size:13px;color:var(--muted);margin-top:4px}
+/* process steps */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:s;margin:0;padding:0;list-style:none;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:28px;height:2px;background:repeating-linear-gradient(90deg,var(--gold) 0 8px,transparent 8px 18px)}
+.steps li{counter-increment:s;position:relative;padding-top:60px}
+.steps li::before{content:counter(s);display:grid;place-content:center;width:40px;height:40px;border-radius:50%;background:var(--cream);border:2px solid var(--gold);color:var(--gilt);font:700 18px/1 var(--body);position:absolute;top:0;left:50%;transform:translateX(-50%)}
+.steps h3{margin:0 0 8px;font-size:24px}
+.steps p{margin:0;color:var(--muted);font-size:16px}
+.trust{margin:40px 0 0;padding:20px 24px;background:var(--page);border-left:4px solid var(--gold);border-radius:0 var(--r) var(--r) 0;font-size:16px;color:var(--muted)}
+.trust strong{color:var(--navy)}
+/* closing */
+.closing{background:var(--navy);color:var(--cream)}
+.closing .sec{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between;padding-top:64px;padding-bottom:64px}
+.closing h2{color:var(--cream);margin:0 0 12px}.closing p{margin:0;max-width:560px;opacity:.88}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px;margin:16px 0 0;padding:0;list-style:none;font-size:15px;font-weight:600}
+.checks li::before{content:"\2713";color:var(--gold);margin-right:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px 12px;margin:0 0 28px;padding:0;list-style:none}
+.chips button{min-height:44px;padding:0 20px;border-radius:6px;border:1px solid var(--line);background:var(--cream);color:var(--muted);font:600 15px/1 var(--body);cursor:pointer;transition:background .15s,border-color .15s}
+.chips button:hover{border-color:var(--gold);color:var(--navy)}
+.chips button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+/* article pages — encyclopaedia entry */
+.masthead{border-bottom:2px solid var(--line);background:var(--cream)}
+.masthead-in{max-width:var(--wrap);margin:0 auto;padding:36px 28px 32px;display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:36px;align-items:center}
+.masthead h1{margin:0 0 16px;font-size:clamp(28px,3.6vw,44px);line-height:1.08;letter-spacing:-.01em;max-width:780px}
+.masthead .meta{margin:0;font-size:15px;color:var(--muted)}
+.masthead .hero-photo{margin:0}.masthead .hero-photo img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 25%;border:2px solid var(--gold);border-radius:3px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.masthead .hero-photo figcaption{margin-top:6px;font-size:12px;color:var(--muted);text-align:center;font-style:italic}
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;font-size:14px;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.breadcrumb{background:transparent;border:0}
+.breadcrumb-inner{max-width:var(--wrap);margin:0 auto;padding:14px 28px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px}
+.breadcrumb a{color:var(--muted)}
+.layout{max-width:var(--wrap);margin:0 auto;padding:44px 28px 72px;display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:48px;align-items:start}
+.article{min-width:0;max-width:740px}
+.article a{color:#0066cc}.article a:visited{color:#0052a3}.article a:hover{text-decoration:underline}
+.article h2{font-size:clamp(26px,2.5vw,32px);border-bottom:1px solid var(--gold);padding-bottom:6px;margin:44px 0 14px;scroll-margin-top:88px}
+.article h3{font-size:22px;margin:28px 0 10px}
+.article p{margin:0 0 18px}
+.article ul,.article ol{padding-left:24px}
+.article table{width:100%;border-collapse:collapse;margin:24px 0;font-size:16px;overflow-x:auto;background:var(--page);border-radius:var(--r)}
+.article th{text-align:left;color:var(--navy);padding:12px 14px;background:var(--cream);border-bottom:2px solid var(--gold)}
+.article td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.article details{border-bottom:1px solid var(--line);padding:16px 0;margin:0}
+.article summary{cursor:pointer;font:400 20px/1.4 var(--display);color:var(--navy)}
+.article iframe{max-width:100%;border:0;border-radius:8px}
+.article .ai-note{background:var(--page);border-left:4px solid var(--gold);border-radius:0 var(--r) var(--r) 0;padding:14px 18px;font-size:15px;color:var(--muted)}
+.article .callout{background:var(--page);border-left:4px solid var(--gold);border-radius:0 var(--r) var(--r) 0;padding:14px 18px;margin:18px 0}
+.article .callout p{margin:0;color:var(--muted)}
+.article .note,.article .emergency{background:var(--page);border-left:4px solid var(--gold);border-radius:0 var(--r) var(--r) 0;padding:14px 18px;margin:18px 0;font-size:15px}
+.article .note p,.article .emergency p{margin:0}
+.article .widget{background:var(--page);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin:24px 0}
+.sidebar{position:sticky;top:92px;display:grid;gap:20px;max-height:calc(100vh - 108px);overflow:auto;padding-left:20px;border-left:2px solid var(--line);font-size:15px}
+.sidebar h3,.sidebar h4{margin:0 0 12px;font:700 12px/1.3 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--gilt)}
+.sidebar p{margin:0;color:var(--muted)}
+.sidebar ol,.sidebar ul{margin:0;padding:0;list-style:none}
+.sidebar .toc ol{counter-reset:t}
+.sidebar .toc li{counter-increment:t;display:grid;grid-template-columns:26px minmax(0,1fr);gap:4px}
+.sidebar .toc li::before{content:counter(t);color:var(--gilt);font:700 14px/1.8 var(--body)}
+.sidebar li a{display:block;padding:5px 0;line-height:1.45;color:var(--navy);text-decoration:none}
+.sidebar li a:hover{color:var(--choc)}
+.sidebar .cta-box{background:var(--cream);border:1px solid var(--gold);border-radius:var(--r);padding:16px;margin:0 0 16px}
+.sidebar .cta-box h4{color:var(--navy);text-transform:none;letter-spacing:0;font-size:18px}
+.sidebar .cta-box .btn{width:100%;justify-content:center;padding:10px 14px}
+.sidebar .sidebar-panel{background:var(--page);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:0 0 16px}
+.sidebar .sidebar-panel h3{margin:0 0 10px;font:700 12px/1.4 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--gilt);border-bottom:1px solid var(--gold);padding-bottom:6px}
+.sidebar .sidebar-panel p{margin:0;font-size:15px;color:var(--muted)}
+/* static pages */
+.wrap{max-width:var(--wrap);margin:0 auto;padding:40px 28px 72px}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:48px;align-items:start}
+.panel{min-width:0;max-width:740px;background:var(--page);border-radius:var(--r);padding:32px}
+.panel h1{font-size:clamp(32px,3.8vw,48px);margin:0 0 18px}
+.panel h2{font-size:26px;margin:36px 0 12px;border-bottom:1px solid var(--gold);padding-bottom:4px}
+.panel ul{padding-left:20px}
+.panel li{margin-bottom:6px}
+.follow-sidebar-panel{padding-left:20px;border-left:2px solid var(--line);font-size:15px}
+.follow-sidebar-panel h2{margin:0 0 12px;font:700 12px/1.3 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--gilt)}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}.follow-sidebar-panel a{display:block;padding:5px 0;color:var(--navy)}
+[data-follow-sidebar]{position:sticky;top:92px}
+[data-follow-parent]{overflow:visible;align-items:start}
+/* legacy article hero — old markup styled with new tokens */
+.hero{background:var(--cream);border-bottom:1px solid var(--line);margin:0;padding:0}
+.hero-inner{max-width:var(--wrap);margin:0 auto;padding:36px 28px 32px;display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:36px;align-items:center}
+.hero-inner>*{grid-column:1}
+.hero-inner .hero-photo{grid-column:2;grid-row:1/span 3;margin:0;align-self:center;max-width:200px}
+.hero-inner .hero-photo img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 25%;border:2px solid var(--gold);border-radius:3px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.hero-inner .hero-photo figcaption{font-size:12px;color:var(--muted);text-align:center;font-style:italic;margin-top:6px}
+.hero .eyebrow{margin:0 0 14px;font:700 12px/1.4 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--gilt)}
+.hero h1{margin:0 0 16px;font-size:clamp(28px,3.6vw,44px);line-height:1.08;letter-spacing:-.01em;max-width:780px;color:var(--navy);font-family:var(--display);font-weight:400}
+.hero p{color:var(--muted);margin:0;max-width:640px}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-inner .hero-photo{display:none}.hero-inner{padding:24px 22px 28px}}
+/* breakpoints */
+@media(min-width:1025px) and (max-width:1439px){:root{--wrap:1080px}.hero-home h1{font-size:clamp(40px,4.8vw,62px)}body{font-size:17px}}
+@media(max-width:1024px){.paths,.nums{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.steps::before{display:none}.steps li{padding-top:0;padding-left:64px}.steps li::before{top:0;left:50%;transform:translateX(0)}.layout{gap:36px;grid-template-columns:minmax(0,1fr) 250px}}
+@media(max-width:860px){.hero-home{grid-template-columns:1fr;padding-top:44px;gap:28px}.hero-figure{max-width:280px;grid-row:1}
+.masthead-in{grid-template-columns:1fr}.masthead .hero-photo{display:none}
+.layout,.follow-sidebar-layout{grid-template-columns:1fr}.sidebar,[data-follow-sidebar]{position:static;max-height:none;border-left:0;padding-left:0;margin-top:24px}
+.sec{padding:52px 22px}.closing .sec{flex-direction:column;text-align:center}}
+@media(max-width:600px){body{font-size:17px}.paths,.nums,.steps{grid-template-columns:1fr}.num{border-bottom:1px solid var(--line);padding-bottom:20px}.num:last-child{border-bottom:0}
+.card{padding:18px 20px}.sc-topbar-inner,.masthead-in,.layout,.wrap,.sec,.hero-home{padding-left:16px;padding-right:16px}.btn{width:100%;justify-content:center}.hero-home .intro{font-size:18px}}
+@media print{body{background:#fff;color:#000}.sc-topbar,.sc-footer,.sidebar,.follow-sidebar-panel,.skip,.closing,.btn,.arrow,.chips{display:none!important}
+.hero-home{display:block;padding:20px}.layout{display:block;padding:0}.article{max-width:none}.masthead-in{display:block;padding:16px}}
+</style>
+<style id="calc-ui">
+.calc{border:1px solid var(--line);border-radius:var(--r);background:var(--page);padding:26px 28px}
+.calc h2{margin:0 0 8px;font-size:28px;border:0;padding:0}
+.calc-intro{margin:0 0 22px;font-size:16px;color:var(--muted);max-width:640px}
+.calc-parents{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.calc-parent{border:1px solid var(--line);border-radius:var(--r);background:var(--cream);padding:16px 18px 18px;margin:0}
+.calc-parent legend{padding:0 8px;font:700 11px/1.4 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--gilt)}
+.calc-parent label{display:block;margin:0 0 12px;font-size:13px;font-weight:700;color:var(--navy)}
+.calc-parent label:last-child{margin-bottom:0}
+.calc-parent select{display:block;width:100%;margin-top:6px;padding:11px 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:#1a2744;font:400 14px/1.3 var(--body);min-height:46px}
+.calc-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0 0}
+.calc-reset{border:0;background:none;color:var(--gilt);font:700 13px/1 var(--body);text-decoration:underline;cursor:pointer;padding:8px 4px}
+.calc-out{margin:24px 0 0;padding:20px 0 0;border-top:1px solid var(--line)}
+.calc-bar{display:flex;height:26px;border-radius:4px;overflow:hidden;background:var(--line)}
+.calc-bar span{display:block;height:100%}
+.calc-legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin:14px 0 0;padding:0;list-style:none;font-size:14px;color:var(--navy)}
+.calc-legend b{font-variant-numeric:tabular-nums}
+.calc-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;vertical-align:baseline;border:1px solid rgba(0,0,0,.18)}
+.calc-note{margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--muted)}
+.calc-note strong{color:var(--navy)}
+@media(max-width:700px){.calc-parents{grid-template-columns:1fr}.calc{padding:20px 18px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Labrador Coat Color Calculator",
+      "url": "https://labrador-retriever-care.github.io/labrador-coat-color-calculator.html",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+      "publisher": {"@type": "Organization", "name": "Labrador Retriever Care"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Can two yellow Labradors have black puppies?", "acceptedAnswer": {"@type": "Answer", "text": "No. Yellow is caused by two copies of the e allele (ee), so two yellow parents pass only e and every puppy is yellow. If two supposedly yellow Labs produce a black puppy, one parent is not actually ee."}},
+        {"@type": "Question", "name": "Can two black Labradors have yellow puppies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if both black parents carry one e allele (Ee). Two Ee parents have a 25% chance of an ee puppy, which is yellow."}},
+        {"@type": "Question", "name": "Can two chocolate Labradors have black puppies?", "acceptedAnswer": {"@type": "Answer", "text": "No. Chocolate parents are bb, so every puppy receives b from both sides and is bb. Puppies are chocolate, or yellow if the E locus is ee."}},
+        {"@type": "Question", "name": "Why does a yellow Labrador have a brown nose?", "acceptedAnswer": {"@type": "Answer", "text": "A yellow Lab that also carries bb has chocolate pigment in the nose and eye rims. A yellow with at least one B has black pigment. A yellow with bb and no pigment at all is often called a Dudley."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Labrador Retriever Care <span>Vol. I</span></a>
+    <nav aria-label="Main"><ul class="sc-topbar-nav"><li><a href="/blog.html">All guides</a></li><li><a href="/blog.html#care">Daily Care</a></li><li><a href="/blog.html#behavior">Behavior & Training</a></li><li><a href="/blog.html#guides">Breed Guides</a></li><li class="cta"><a href="/labrador-coat-color-calculator.html">Coat Color Calculator</a></li></ul></nav>
+    <details class="vol"><summary>Browse</summary><nav class="vol-panel" aria-label="Mobile"><a href="/blog.html">All guides</a><a href="/blog.html#care">Daily Care</a><a href="/blog.html#behavior">Behavior & Training</a><a href="/blog.html#guides">Breed Guides</a><div class="minor"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial policy</a><a href="/sitemap.html">Sitemap</a></div></nav></details>
+  </div>
+</header>
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="breadcrumb-inner"><a href="/">Home</a><span>›</span><a href="/blog.html">All guides</a><span>›</span><span aria-current="page">Coat color calculator</span></div></nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="eyebrow">Tools / Coat colour</p>
+      <h1>Labrador coat color calculator</h1>
+      <p>Pick the two genes that decide Labrador color for each parent and see the odds of black, chocolate and yellow puppies. It is the same B/E genetics a DNA test reports, in plain English.</p>
+    </div>
+  </div>
+</section>
+
+<div class="layout" data-follow-parent="true" id="content">
+  <article class="article">
+    <nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">All guides</a><span>›</span><span aria-current="page">Coat color calculator</span></nav>
+
+    <p>Labrador color is decided by two genes working in order. The B locus says whether pigment is black or chocolate. The E locus says whether that pigment can show up in the coat at all. Change either one and the litter changes.</p>
+
+    <section class="widget calc" aria-labelledby="calc-title">
+      <h2 id="calc-title">Puppy colour calculator</h2>
+      <p class="calc-intro">You do not need a DNA test to try it. If you know both parents' colours, pick the most likely genotype; if you have test results, use them exactly.</p>
+
+      <div class="calc-parents">
+        <fieldset class="calc-parent">
+          <legend>Sire (father)</legend>
+          <label for="sire-b">B locus — black or chocolate
+            <select id="sire-b">
+              <option value="BB">BB — black, no chocolate hidden</option>
+              <option value="Bb" selected>Bb — black, carries chocolate</option>
+              <option value="bb">bb — chocolate</option>
+            </select>
+          </label>
+          <label for="sire-e">E locus — can black show
+            <select id="sire-e">
+              <option value="EE">EE — no yellow hidden</option>
+              <option value="Ee" selected>Ee — carries yellow</option>
+              <option value="ee">ee — yellow (no black pigment)</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="calc-parent">
+          <legend>Dam (mother)</legend>
+          <label for="dam-b">B locus — black or chocolate
+            <select id="dam-b">
+              <option value="BB">BB — black, no chocolate hidden</option>
+              <option value="Bb" selected>Bb — black, carries chocolate</option>
+              <option value="bb">bb — chocolate</option>
+            </select>
+          </label>
+          <label for="dam-e">E locus — can black show
+            <select id="dam-e">
+              <option value="EE">EE — no yellow hidden</option>
+              <option value="Ee" selected>Ee — carries yellow</option>
+              <option value="ee">ee — yellow (no black pigment)</option>
+            </select>
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="calc-actions">
+        <button type="button" class="btn" id="calc-run">Calculate puppies</button>
+        <button type="button" class="calc-reset" id="calc-reset">Reset</button>
+      </div>
+
+      <output class="calc-out" id="calc-out" aria-live="polite">
+        <div class="calc-bar" id="calc-bar" aria-hidden="true"></div>
+        <ul class="calc-legend" id="calc-legend"></ul>
+        <p class="calc-note" id="calc-note"></p>
+      </output>
+    </section>
+
+    <h2>How the B and E genes work</h2>
+    <p><strong>B locus (TYRP1 gene).</strong> B produces black pigment, b produces chocolate. A dog with at least one B is black-based; a dog with bb is chocolate-based. Chocolate is recessive, so both parents must pass b for a chocolate puppy.</p>
+    <p><strong>E locus (MC1R gene).</strong> E lets black or chocolate pigment show in the coat. Two copies of e (ee) switch that pigment off in the hair, so the dog looks yellow or golden — while the nose and eye rims keep the colour their B genes set. A yellow Lab with bb has a brown nose; a yellow with B has a black nose.</p>
+    <p>That gives three coat colours from two genes. The calculator crosses the possible egg and sperm combinations and adds up the phenotype each genotype produces.</p>
+
+    <h2>Genotype to colour, at a glance</h2>
+    <table>
+      <thead><tr><th>Genes</th><th>Coat colour</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>B_E_</td><td>Black</td><td>Any B with at least one E. Most Labs.</td></tr>
+        <tr><td>bbE_</td><td>Chocolate</td><td>Recessive on both B alleles.</td></tr>
+        <tr><td>B_ee</td><td>Yellow</td><td>Black pigment in nose and eye rims.</td></tr>
+        <tr><td>bbee</td><td>Yellow</td><td>Brown pigment in nose and eye rims; no pigment at all is a Dudley.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Reading the results</h2>
+    <p>The percentages are per puppy, not per litter. A 25% result means each puppy has a one-in-four chance — a litter of eight can still have five chocolates. Real litters also drift from the expected odds simply because each puppy is an independent draw.</p>
+    <div class="callout"><p><strong>Sanity check:</strong> two yellow parents cannot produce black or chocolate puppies, and two chocolate parents cannot produce black. If a litter contradicts that, a parent's genotype is not what it was believed to be.</p></div>
+
+    <h2>Questions owners ask</h2>
+    <details><summary>Can two yellow Labradors have black puppies?</summary><p>No. Yellow means ee, so both parents pass e and every puppy is ee — yellow. The nose colour can still differ depending on B.</p></details>
+    <details><summary>Can two black Labradors have yellow puppies?</summary><p>Yes, if both are Ee. Two carriers have a 25% chance per puppy of an ee puppy. If both are also Bb, the same litter can include chocolate too.</p></details>
+    <details><summary>Can two chocolate Labradors have black puppies?</summary><p>No. Chocolate is bb, so every puppy gets b from both sides and is bb. Puppies are chocolate, or yellow when ee.</p></details>
+    <details><summary>Why does a yellow Labrador have a brown nose?</summary><p>A yellow Lab that is also bb has brown pigment in the nose and eye rims. With at least one B the same yellow has black pigment. A yellow with no pigment is usually called a Dudley.</p></details>
+    <details><summary>Is colour linked to health or temperament?</summary><p>No. Coat colour is pigment genetics. Health clearances and temperament come from other genes, breeding choices and training — not from B or E.</p></details>
+
+    <p class="ai-note">Coat colour genetics summarised for owners. If a breeding decision depends on it, confirm genotypes with a DNA test from a veterinary genetics laboratory.</p>
+  </article>
+
+  <aside class="sidebar" data-follow-sidebar>
+    <div class="cta-box">
+      <h4>More Labrador guides</h4>
+      <p>Care, grooming and behaviour answers, checked against owner data and breed sources.</p>
+      <a class="btn" href="/blog.html" data-lrc-from="calculator">Browse all guides →</a>
+    </div>
+    <div class="sidebar-panel">
+      <h3>Related guides</h3>
+      <ul>
+        <li><a href="/do-labradors-shed-a-lot.html">Do Labradors shed a lot?</a></li>
+        <li><a href="/how-often-bathe-labrador.html">How often to bathe a Labrador</a></li>
+        <li><a href="/how-much-feed-labrador.html">How much to feed a Labrador</a></li>
+        <li><a href="/teach-labrador-to-swim.html">Teach a Labrador to swim</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-panel">
+      <h3>Sources</h3>
+      <p><a href="https://vgl.ucdavis.edu/" rel="noopener">UC Davis Veterinary Genetics Laboratory</a> — coat colour loci and testing. <a href="https://www.akc.org/dog-breeds/labrador-retriever/" rel="noopener">AKC breed profile</a> — accepted colours.</p>
+    </div>
+  </aside>
+</div>
+<footer class="sc-footer">
+  <div class="sc-footer-inner">
+    <div><a class="brand" href="/">Labrador Retriever Care</a><p>Practical, evidence-based guides for Labrador Retriever owners on care, training, behavior and everyday life. Written with AI assistance, checked by a person before publication. Not a veterinary clinic.</p><p>&copy; 2026 Labrador Retriever Care</p></div>
+    <nav class="sc-footer-nav" aria-label="Footer"><a href="/blog.html">All guides</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial policy</a><a href="/disclosure.html">Disclosure</a><a href="/privacy.html">Privacy</a><a href="/sitemap.html">Sitemap</a></nav>
+  </div>
+</footer>
+<script>window.dataLayer=window.dataLayer||[];function lrcTrack(n,p){window.dataLayer.push(Object.assign({event:"lrc_genetics_"+n,site:"labrador-retriever-care"},p||{}));if(window.gtag)window.gtag("event","lrc_genetics_"+n,p||{});}document.addEventListener("click",function(e){var a=e.target.closest("[data-lrc-from]");if(a)lrcTrack("cta_click",{from:a.dataset.lrcFrom});});</script>
+<script>
+(function () {
+  "use strict";
+
+  var B_GAMETES = { BB: ["B", "B"], Bb: ["B", "b"], bb: ["b", "b"] };
+  var E_GAMETES = { EE: ["E", "E"], Ee: ["E", "e"], ee: ["e", "e"] };
+
+  function gametes(b, e) {
+    var out = [], i, j;
+    for (i = 0; i < 2; i++) {
+      for (j = 0; j < 2; j++) {
+        out.push({ b: B_GAMETES[b][i], e: E_GAMETES[e][j], p: 0.25 });
+      }
+    }
+    return out;
+  }
+
+  function phenotype(bCount, eCount) {
+    if (eCount === 2) return "yellow";
+    if (bCount === 2) return "chocolate";
+    return "black";
+  }
+
+  function cross(sire, dam) {
+    var res = { black: 0, chocolate: 0, yellow: 0 }, i, j, g1, g2, bCount, eCount;
+    var sg = gametes(sire.b, sire.e), dg = gametes(dam.b, dam.e);
+    for (i = 0; i < sg.length; i++) {
+      for (j = 0; j < dg.length; j++) {
+        g1 = sg[i]; g2 = dg[j];
+        bCount = (g1.b === "b" ? 1 : 0) + (g2.b === "b" ? 1 : 0);
+        eCount = (g1.e === "e" ? 1 : 0) + (g2.e === "e" ? 1 : 0);
+        res[phenotype(bCount, eCount)] += g1.p * g2.p;
+      }
+    }
+    return res;
+  }
+
+  var els = {
+    "sire-b": document.getElementById("sire-b"),
+    "sire-e": document.getElementById("sire-e"),
+    "dam-b": document.getElementById("dam-b"),
+    "dam-e": document.getElementById("dam-e")
+  };
+  var bar = document.getElementById("calc-bar");
+  var legend = document.getElementById("calc-legend");
+  var note = document.getElementById("calc-note");
+  var out = document.getElementById("calc-out");
+  if (!els["sire-b"] || !bar) return;
+
+  var SWATCH = {
+    black: "#1c1a19",
+    chocolate: "#6b4226",
+    yellow: "#e3bd62"
+  };
+  var NAME = { black: "Black", chocolate: "Chocolate", yellow: "Yellow" };
+
+  function pct(x) {
+    var v = Math.round(x * 10000) / 100;
+    var txt = (v % 1 === 0) ? String(v) : v.toFixed(2).replace(/0+$/, "").replace(/\.$/, "");
+    return txt + "%";
+  }
+
+  function render() {
+    var r = cross(
+      { b: els["sire-b"].value, e: els["sire-e"].value },
+      { b: els["dam-b"].value, e: els["dam-e"].value }
+    );
+
+    bar.innerHTML = "";
+    legend.innerHTML = "";
+
+    var order = ["black", "chocolate", "yellow"];
+    var possible = [];
+    order.forEach(function (color) {
+      var share = r[color];
+      if (share <= 0) return;
+      possible.push(NAME[color]);
+
+      var seg = document.createElement("span");
+      seg.style.width = (share * 100) + "%";
+      seg.style.backgroundColor = SWATCH[color];
+      bar.appendChild(seg);
+
+      var li = document.createElement("li");
+      var dot = document.createElement("span");
+      dot.className = "calc-dot";
+      dot.style.backgroundColor = SWATCH[color];
+      li.appendChild(dot);
+      li.appendChild(document.createTextNode(NAME[color] + " "));
+      var strong = document.createElement("b");
+      strong.textContent = pct(share);
+      li.appendChild(strong);
+      legend.appendChild(li);
+    });
+
+    var text = possible.length === 1
+      ? "Every puppy in this pairing is expected to be " + possible[0].toLowerCase() + "."
+      : "This pairing can produce " + possible.join(", ").toLowerCase() + " puppies.";
+    note.innerHTML = "";
+    note.appendChild(document.createTextNode("Percentages are per puppy, not per litter. "));
+    note.appendChild(document.createTextNode(text));
+  }
+
+  ["sire-b", "sire-e", "dam-b", "dam-e"].forEach(function (id) {
+    els[id].addEventListener("change", render);
+  });
+  document.getElementById("calc-run").addEventListener("click", render);
+  document.getElementById("calc-reset").addEventListener("click", function () {
+    els["sire-b"].value = "Bb";
+    els["sire-e"].value = "Ee";
+    els["dam-b"].value = "Bb";
+    els["dam-e"].value = "Ee";
+    render();
+  });
+
+  render();
+  if (window.lrcTrack) { window.lrcTrack("calculator_view", { tool: "coat_color" }); }
+})();
+</script>
+</body>
+</html>
