@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media (max-width:700px){
+  .layout-row{flex-direction:column!important;}
+  .layout-row aside{display:none!important;}
+  header nav{gap:8px!important;font-size:0.82rem!important;}
+  header div{flex-wrap:wrap!important}
+}
+
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
+</style>
+<title>English vs American Labrador Weight by Age and Sex</title>
+<meta name="description" content="English vs American Labrador weight compared: breed standards, vet data on 33,000+ Labs by sex, and owner-reported puppy weights by age, plus a free checker." />
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://labrador-retriever-care.github.io/english-vs-american-labrador-weight.html">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Palatino Linotype', 'Book Antiqua', serif; background: #f8f7fc; color: #1f2937; line-height: 1.78; }
+  a { color: #5b21b6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .article a { text-decoration: underline; }
+  .article a:hover { color: #3f1890; }
+  .topbar { background: #5b21b6; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 18px; align-items: center; }
+  .brand { color: #fff; font-size: 1.08rem; font-weight: 700; text-decoration: none; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; text-decoration: none; }
+  .hero { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); color: #fff; }
+  .hero-inner { max-width: 1120px; margin: 0 auto; padding: 32px 22px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.76rem; opacity: 0.88; }
+  .hero h1 { font-size: 2.2rem; line-height: 1.14; margin: 8px 0 12px; max-width: 860px; }
+  .hero p { max-width: 820px; color: rgba(255,255,255,0.92); }
+  .layout { max-width: 1120px; margin: 28px auto; padding: 0 22px 48px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 26px; align-items: start; }
+  .article { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .meta { color: #6b7280; font-size: 0.92rem; margin-bottom: 16px; }
+  .article h2 { color: #3f1890; font-size: 1.42rem; margin: 28px 0 12px; line-height: 1.25; }
+  .article h3 { color: #3f1890; font-size: 1.08rem; margin: 18px 0 10px; }
+  .article p { color: #4b5563; margin-bottom: 14px; }
+  .article ul, .article ol { padding-left: 22px; margin: 12px 0 18px; color: #4b5563; }
+  .article li { margin-bottom: 8px; }
+  .article table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font-size: 0.95rem; }
+  .article th { background: #5b21b6; color: #fff; text-align: left; padding: 12px; }
+  .article td { padding: 12px; border: 1px solid #e5e7eb; vertical-align: top; }
+  .article tr:nth-child(even) td { background: #f5f3ff; }
+  .callout { background: #f3e8ff; border-left: 4px solid #5b21b6; border-radius: 8px; padding: 18px; margin: 18px 0 22px; }
+  .callout p { margin-bottom: 0; color: #4b5563; }
+  .emergency { background: #fef2f2; border-left: 4px solid #dc2626; border-radius: 8px; padding: 18px; margin: 18px 0 22px; }
+  .emergency p { margin-bottom: 0; color: #7f1d1d; font-weight: 600; }
+  .note { background: #fff7ed; border-left: 4px solid #c2410c; border-radius: 8px; padding: 16px; margin: 18px 0 22px; }
+  .note p { margin-bottom: 0; color: #4b5563; }
+  .widget { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); padding: 22px; margin: 28px 0; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .widget h3 { color: #fff; margin-top: 0; margin-bottom: 10px; font-size: 1.08rem; }
+  .widget p { color: rgba(255,255,255,0.92); margin-bottom: 14px; font-size: 0.96rem; }
+  .widget form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .widget input { flex: 1; min-width: 200px; padding: 10px 12px; border: none; border-radius: 6px; font-size: 0.95rem; }
+  .widget button { background: #fff; color: #5b21b6; padding: 10px 20px; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 0.95rem; }
+  .widget-disclaimer { color: rgba(255,255,255,0.75); font-size: 0.8rem; margin-top: 10px; margin-bottom: 0; }
+  .sidebar { position: sticky; top: 18px; display: grid; gap: 18px; }
+  .sidebar-panel { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .sidebar-panel h3 { color: #3f1890; font-size: 1rem; margin-bottom: 10px; }
+  .sidebar-panel p, .sidebar-panel li { color: #4b5563; font-size: 0.92rem; }
+  .sidebar-panel ul { padding-left: 18px; }
+  .sidebar-panel a { color: #5b21b6; text-decoration: underline; }
+  .sidebar-newsletter { background: linear-gradient(135deg, #5b21b6 0%, #3f1890 100%); color: #fff; }
+  .sidebar-newsletter h3, .sidebar-newsletter p { color: #fff; }
+  .sidebar-newsletter input { width: 100%; padding: 10px 11px; border: none; border-radius: 6px; margin: 10px 0 8px; }
+  .sidebar-newsletter button { width: 100%; padding: 10px; border: none; border-radius: 6px; background: #fff; color: #5b21b6; font-weight: 700; cursor: pointer; }
+  details { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 16px; margin: 0 0 12px; background: #fff; }
+  summary { cursor: pointer; font-weight: 700; color: #3f1890; }
+  details p { margin-top: 10px; margin-bottom: 0; color: #4b5563; }
+  .footer { background: #3f1890; color: rgba(255,255,255,0.75); margin-top: 32px; }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 20px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .footer a { color: rgba(255,255,255,0.9); text-decoration: none; }
+  @media (max-width: 840px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .hero h1 { font-size: 1.92rem; }
+  }
+</style>
+
+
+<style id="lw-content">article.article a{color:#0066cc;text-decoration:none}article.article a:visited{color:#0052a3}article.article a:hover{color:#0066cc;text-decoration:underline}#lw-form select,#lw-form input{padding:9px;font:inherit}#lw-form input[type=number]{width:120px}#lw-form button{padding:10px 14px;font:inherit;cursor:pointer}#lw-result{margin-top:14px}article.article .callout h2{margin-top:0}</style>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "English vs American Labrador Weight: What Owners Actually Report by Age and Sex",
+ "description": "English vs American Labrador weight compared: breed standards, vet data on 33,000+ Labs by sex, and owner-reported puppy weights by age, plus a free checker.",
+ "author": {
+  "@type": "Organization",
+  "name": "Lab Care Research Team"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Labrador Retriever Care"
+ },
+ "datePublished": "2026-11-09",
+ "dateModified": "2026-11-09",
+ "mainEntityOfPage": "https://labrador-retriever-care.github.io/english-vs-american-labrador-weight.html"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "How much should an English Labrador weigh?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "There is no separate published figure for English (show-bred) Labs. The UK breed standard gives heights only: 56 to 57 cm for dogs and 55 to 56 cm for bitches. Many show-bred Labs fall within the AKC working-condition range of 65 to 80 lb for males and 55 to 70 lb for females, but body condition matters more than the number."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Are American Labs bigger than English Labs?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Field-bred (\"American\") Labs are often taller and leaner, while show-bred (\"English\") Labs are often shorter and heavier-boned. No study has weighed the two types side by side, and individual dogs overlap heavily, so a given field dog may weigh more or less than a given show dog."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How much does an adult male Labrador weigh compared with a female?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "In a UK veterinary study of 33,320 Labradors, adult males averaged 35.2 kg (about 77.6 lb) and adult females 30.4 kg (about 67.0 lb). The AKC standard gives approximately 65 to 80 lb for males and 55 to 70 lb for females in working condition."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "At what age does a Labrador reach adult weight?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Veterinary growth curves show Labrador puppies grow rapidly during their first year and then plateau, with males levelling off at a higher weight than females. The VetCompass study treated weights after 18 months as adult. One owner diary on The Labrador Forum shows a dog holding steady at 27.5 to 28 kg from 12 to 14 months."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How much should a Labrador puppy weigh at 8 weeks?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Owner reports vary widely. On The Labrador Forum, 8-week weights ranged from 2.6 kg to 7.25 kg, with the heaviest a show-line male. A single 8-week weight is a poor predictor of adult size; the parents' adult weights tell you more."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does neutering make a Labrador heavier?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "In the VetCompass data, 11.4% of neutered males were recorded as overweight or obese compared with 4.1% of entire males. In females the difference (12.5% versus 8.3%) was not statistically significant. Watching portions after neutering helps."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "VideoObject",
+ "name": "English Show vs Field Labrador Retriever: 5 Dog Comparison!",
+ "description": "Trainer Stonnie Dennis compares English show Labradors with an American field Lab and a British field Lab, covering build, drive and retrieving training.",
+ "thumbnailUrl": "https://i.ytimg.com/vi/dWrH5H0OQ3w/hqdefault.jpg",
+ "uploadDate": "2026-03-28",
+ "embedUrl": "https://www.youtube-nocookie.com/embed/dWrH5H0OQ3w"
+}</script>
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="English vs American Labrador Weight: What Owners Actually Report by Age and Sex">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://labrador-retriever-care.github.io/english-vs-american-labrador-weight.html">
+<meta property="og:description" content="English vs American Labrador weight compared: breed standards, vet data on 33,000+ Labs by sex, and owner-reported puppy weights by age, plus a free checker.">
+<meta property="og:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="English vs American Labrador Weight: What Owners Actually Report by Age and Sex">
+<meta name="twitter:description" content="English vs American Labrador weight compared: breed standards, vet data on 33,000+ Labs by sex, and owner-reported puppy weights by age, plus a free checker.">
+<meta name="twitter:image" content="https://labrador-retriever-care.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="yellow Labrador Retriever walking along a lakeside path">
+<!-- social-cards:end -->
+<style>.hero-inner.with-photo{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:48px;grid-template-rows:auto auto 1fr;align-items:start}.hero-inner.with-photo>*{grid-column:1}.hero-inner.with-photo>.hero-photo{grid-column:2;grid-row:1/span 3;margin:0;align-self:center}.hero-photo img{display:block;width:100%;height:auto;border-radius:8px}.hero-photo figcaption{font-size:11px;color:inherit;opacity:.75;margin-top:4px}@media(max-width:860px){.hero-inner.with-photo{display:block}.hero-photo{display:none}}</style>
+
+
+</head>
+<body>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Labrador Retriever Care <span>Vol. I</span></a>
+    <nav aria-label="Main"><ul class="sc-topbar-nav"><li><a href="/blog.html">All guides</a></li><li><a href="/blog.html#care">Daily Care</a></li><li><a href="/blog.html#behavior">Behavior & Training</a></li><li><a href="/blog.html#guides">Breed Guides</a></li><li class="cta"><a href="/labrador-coat-color-calculator.html">Coat Color Calculator</a></li></ul></nav>
+    <details class="vol"><summary>Browse</summary><nav class="vol-panel" aria-label="Mobile"><a href="/blog.html">All guides</a><a href="/blog.html#care">Daily Care</a><a href="/blog.html#behavior">Behavior & Training</a><a href="/blog.html#guides">Breed Guides</a><div class="minor"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial policy</a><a href="/sitemap.html">Sitemap</a></div></nav></details>
+  </div>
+</header>
+
+
+
+
+
+
+<div class="hero">
+<div class="hero-inner with-photo"><p class="eyebrow">Labrador Retriever size guide</p><h1>English vs American Labrador Weight: What Owners Actually Report by Age and Sex</h1><p>Show-bred or field-bred, male or female: see what breed standards, veterinary records and owner weight diaries really say, then check your own Lab against them.</p>
+    <figure class="hero-photo"><img src="/assets/home-editorial-20261025.webp" alt="yellow Labrador Retriever walking along a lakeside path - AI-generated illustration" width="1536" height="1024" loading="lazy" decoding="async"><figcaption>AI-generated illustration.</figcaption></figure>
+  </div></div>
+<div class="layout" data-follow-parent="true">
+  <article class="article">
+<nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>&rsaquo;</span><a href="/blog.html">Blog</a><span>&rsaquo;</span><span aria-current="page">English vs American Labrador Weight</span></nav>
+
+<p><strong>English vs American Labrador weight</strong> is one of those debates where everyone has an opinion and almost nobody has a scale reading to back it up. Owners who actually weigh their dogs, and write the numbers down, belong to a fairly small club, and their records tell a more interesting story than the usual "English Labs are stocky, American Labs are tall" shorthand. This guide pulls together the breed standards, a large veterinary dataset on adult weight by sex, and real owner-reported puppy diaries, so you can see where your own Lab actually sits.</p>
+
+<div class="callout"><p><strong>Quick answer:</strong> There is no separate published weight table for "English" (show-bred) and "American" (field-bred) Labradors. The AKC standard gives approximately 65 to 80 lb for males and 55 to 70 lb for females in working condition, and a UK veterinary study of more than 33,000 Labradors recorded an average adult weight of 35.2 kg (about 78 lb) for males and 30.4 kg (about 67 lb) for females. Owner reports suggest show-line pups often run heavier for their age and field-line dogs leaner, but the overlap is large. Sex, frame, neutering and food intake move the scale more than the label on the pedigree.</p></div>
+
+<p>Enter your Lab's age, sex, line and current weight below. The checker places your dog against real owner diaries for puppies and against veterinary averages for adults, and tells you honestly when the data cannot say more.</p>
+
+<section aria-labelledby="lw-heading" class="callout" id="lw-check">
+<h2 id="lw-heading">Labrador weight diary checker: English, American or mixed line</h2>
+<p>Every reference point in this tool comes from a source quoted in the article. Puppy comparisons use owner-reported forum diaries; adult comparisons use the VetCompass averages and the AKC working-condition range.</p>
+<form id="lw-form">
+<p><label for="lw-sex">Sex</label><br><select id="lw-sex"><option value="m">Male</option><option value="f">Female</option><option value="u">Not sure / prefer not to say</option></select></p>
+<p><label for="lw-line">Line or type</label><br><select id="lw-line"><option value="show">English / show-bred</option><option value="field">American / field-bred</option><option value="mixed" selected>Mixed or unknown</option></select></p>
+<p><label for="lw-age">Age</label><br><input id="lw-age" type="number" min="1" max="240" step="1" value="6" required> <select id="lw-ageunit" aria-label="Age unit"><option value="w">weeks</option><option value="m" selected>months</option><option value="y">years</option></select></p>
+<p><label for="lw-wt">Current weight</label><br><input id="lw-wt" type="number" min="0.5" max="200" step="0.1" value="50" required> <select id="lw-wtunit" aria-label="Weight unit"><option value="lb" selected>lb</option><option value="kg">kg</option></select></p>
+<button type="submit">Check my Lab</button> <button type="reset">Reset</button>
+</form>
+<div id="lw-result" role="status" aria-live="polite" aria-atomic="true"><p>Your comparison will appear here.</p></div>
+<div id="lw-chart" aria-hidden="true"></div>
+<noscript><p>Without JavaScript: adult males averaged 35.2 kg (77.6 lb) and adult females 30.4 kg (67.0 lb) in the VetCompass study; puppy diaries in the table further down show the spread at each age.</p></noscript>
+</section>
+
+<h2>Are English Labs really lighter than American Labs?</h2>
+<p>Not in any way that has been measured head to head. No peer-reviewed study we could find weighs show-bred and field-bred Labradors side by side, so every "English Labs weigh X" figure online is either a reading of the breed standard or an owner impression.</p>
+<p>What the evidence does support is narrower and more useful. The terms "English" and "American" describe what a line has been bred for, not a country of birth and not a separate breed. Show (bench) lines are selected for the classic outline described in the breed standard: a broad head, a thick otter tail, and a deep, strong body. Field and field-trial lines are selected for speed, drive and stamina over long retrieves. That selection tends to produce a deeper, heavier-boned show dog and a rangier, often lighter field dog at the same height, which is why owners notice a difference when the two stand next to each other.</p>
+<h3>Why the scale still overlaps</h3>
+<p>A tall field-bred male can easily outweigh a compact show-bred female, and a well-muscled show male in lean condition may weigh the same as a leggy field male who is carrying a little extra. Frame size inside each line varies a lot, and food intake can add or remove 10 lb faster than genetics ever will. Treat line type as a hint about shape, not a prediction of a number.</p>
+<h3>Where owners in the know look instead</h3>
+<p>Experienced breeders and trialers judge size by the parents and by body condition. The parents' weights, measured in fit condition, are the best single predictor you can get from a breeder, and a hands-on rib check tells you whether your own dog's number is healthy. Both come up again in the checklist below.</p>
+
+<h2>What do the breed standards say about Labrador weight?</h2>
+<p>Only the American standard gives a weight. The <a href="https://images.akc.org/pdf/breeds/standards/LabradorRetriever.pdf">AKC Labrador Retriever standard</a> lists an approximate weight "in working condition" of 65 to 80 pounds for dogs and 55 to 70 pounds for bitches; the UK standard gives heights only.</p>
+<h3>The AKC standard (United States)</h3>
+<p>The AKC text, approved on February 12, 1994 and effective March 31, 1994, sets the height at the withers at 22½ to 24½ inches for dogs and 21½ to 23½ inches for bitches, and makes any variance of more than ½ inch above or below those heights a disqualification. The minimum heights do not apply to dogs under twelve months. Note the phrase "working condition": the weight range describes a fit, active dog, not an average pet.</p>
+<h3>The Royal Kennel Club standard (United Kingdom)</h3>
+<p>The <a href="https://www.royalkennelclub.com/breed-standards/gundog/retriever-labrador/">Royal Kennel Club breed standard</a> gives an ideal height at the withers of 56 to 57 cm (22 to 22½ in) for dogs and 55 to 56 cm (21½ to 22 in) for bitches, and no weight at all. It describes the Labrador as "very agile (which precludes excessive body weight or excessive substance)" and adds a note for puppy buyers that a dog might be larger or smaller than the sizes stated.</p>
+<p>Put the two side by side and the "English Labs are shorter" idea makes sense on paper: the UK ideal for males sits at the low end of the AKC range. In practice, show dogs in the United States are judged against the AKC standard, while field-bred dogs on both sides of the Atlantic are bred for performance rather than for a written outline, so neither standard is really "the American Lab standard" in the field-line sense.</p>
+
+<table><caption>Labrador size and weight references compared</caption><thead><tr><th>Reference</th><th>Males</th><th>Females</th><th>What it actually measures</th></tr></thead><tbody>
+<tr><td>AKC standard (US)</td><td>22½–24½ in; approx. 65–80 lb</td><td>21½–23½ in; approx. 55–70 lb</td><td>Ideal for a show dog in working condition</td></tr>
+<tr><td>Royal Kennel Club standard (UK)</td><td>56–57 cm (22–22½ in); no weight</td><td>55–56 cm (21½–22 in); no weight</td><td>Ideal height only; warns against excessive body weight</td></tr>
+<tr><td>VetCompass UK clinic records</td><td>Mean 35.2 kg (77.6 lb), SD 5.9 kg</td><td>Mean 30.4 kg (67.0 lb), SD 5.2 kg</td><td>Real recorded weights of pet Labs over 18 months, all lines mixed</td></tr>
+<tr><td>Owner forum reports</td><td>Example: working-line male 31 kg (68 lb) at 15 months</td><td>Example: field-stock female about 20 lb at 12 weeks</td><td>Individual dogs, self-reported, not a sample</td></tr>
+</tbody></table>
+
+<h2>How much do adult male and female Labradors weigh in real records?</h2>
+<p>In the largest dataset available, adult males averaged 35.2 kg (about 77.6 lb) and adult females 30.4 kg (about 67.0 lb). That is close to the top of the AKC working-condition range for each sex, which says something about how many pet Labs carry a few extra pounds.</p>
+<p>These figures come from the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6196571/">VetCompass study of Labrador retrievers in UK primary veterinary care</a>, published in Canine Genetics and Epidemiology in 2018. The authors looked at all 33,320 Labradors under care at participating practices in 2013, defined adult bodyweight as the mean of all weights recorded after 18 months of age, and found the overall adult mean was 33.0 kg (SD 6.1). The male-female gap was statistically significant.</p>
+<h3>What one standard deviation means for your dog</h3>
+<p>A standard deviation of 5.9 kg for males means roughly two thirds of adult males in a normally shaped spread would fall between about 29.3 and 41.1 kg (65 to 91 lb). For females, with an SD of 5.2 kg, the same band is roughly 25.2 to 35.6 kg (56 to 78 lb). Those bands are wide, and they include dogs that are overweight, which is exactly why the checker above reports where your Lab sits rather than labelling it.</p>
+<h3>Growth, plateau and neutering</h3>
+<p>Growth curves built from 84,750 weight records of 10,228 females and 103,819 records of 12,069 males showed that Labrador puppies grow rapidly during their first year, and that males plateau at a higher adult weight than females. Overweight or obesity was the second most common recorded disorder at 8.8%. Neutering made a clear difference in males (4.1% of entire males versus 11.4% of neutered males were recorded as overweight or obese), while the difference in females (8.3% versus 12.5%) was not statistically significant. The authors also noted a general decline in bodyweight from about 10 years of age onward.</p>
+<p>If your adult Lab is drifting upward, the fastest lever is the food bowl rather than extra miles. Our guide on <a href="/how-much-feed-labrador.html">how much to feed a Labrador in real cups per day</a> walks through portion sizes by weight and activity.</p>
+
+<h2>Owner-reported puppy weights by age</h2>
+<p>For puppies, the most honest data available to the public is the owner diary. The long-running <a href="https://thelabradorforum.com/threads/how-much-does-your-puppy-weigh.5888/">"How much does your puppy weigh?" thread on The Labrador Forum</a>, started in 2013, collects exactly that: individual owners posting their dogs' weights at specific ages, sometimes with the line type.</p>
+<p>The table below lists entries from the first page of that thread. Month ages are given as the owner stated them; the checker converts months to weeks (one month is treated as about 4.35 weeks) only so the diaries can be drawn on the same chart.</p>
+<table><caption>Owner-reported Labrador puppy weights (The Labrador Forum)</caption><thead><tr><th>Dog as described by owner</th><th>Line stated</th><th>Weights reported</th></tr></thead><tbody>
+<tr><td>Albert, male ("a big boy")</td><td>Show lines</td><td>7.25 kg at 8 weeks; 13.6 kg (30 lb) at about 14 weeks</td></tr>
+<tr><td>Shea, female</td><td>American field stock</td><td>About 20 lb (about 9 kg) at 12 weeks</td></tr>
+<tr><td>Odin, male</td><td>Pure working line</td><td>About 7 kg at 8 weeks; 31 kg at 15 months</td></tr>
+<tr><td>Diary A (sex not stated)</td><td>Not stated</td><td>6.5 kg at 8 weeks; 11 kg at 3 months; 17 kg at 4 months; 25 kg at 6 months; 28 kg at 9 months; 27.5–28 kg from 12 to 14 months</td></tr>
+<tr><td>Harvey</td><td>Not stated</td><td>3.5 kg at 8 weeks; 8.5 kg at 12 weeks; 13.5 kg at 15 weeks; 21 kg at 22 weeks; 24.8 kg at 27 weeks; 25.5 kg at 31 weeks</td></tr>
+<tr><td>Diary B (sex not stated)</td><td>Not stated</td><td>3.8 kg at 8 weeks; 6 kg at 11 weeks; 16 kg at 20 weeks; 23.8 kg at 38 weeks</td></tr>
+<tr><td>Buster, male</td><td>Not stated</td><td>4.1 kg at 8 weeks; 9.1 kg at 14 weeks</td></tr>
+<tr><td>Penny</td><td>Not stated</td><td>2.6 kg at 8 weeks</td></tr>
+</tbody></table>
+<h3>What the diaries show</h3>
+<p>The spread at 8 weeks runs from 2.6 kg to 7.25 kg, almost a threefold difference between litters, and it narrows only partly as puppies grow. Diary A's dog put on weight fast and then held steady around 27.5 to 28 kg from its first birthday, while Harvey was already over 25 kg at 31 weeks after starting at just 3.5 kg. The heaviest young puppy in the sample is the show-line male, and the American field-stock female is mid-pack at 12 weeks, which fits the owner impression that show lines are chunkier early on. Two dogs are not a trend, though, and the owners themselves noted how much variation there is between litters.</p>
+<h3>How to read this alongside your own puppy</h3>
+<p>Use these diaries to see the range real owners report, not as targets. A puppy below every diary line at the same age, or one well above them, is worth a body-condition check with your vet, and steady growth matters more than a single weigh-in. Puppies also need sensible exercise while they grow; our article on the <a href="/labrador-5-minute-per-month-puppy-exercise-rule.html">5-minute-per-month puppy exercise rule</a> explains where that guideline comes from.</p>
+
+<h2>Why do "English" and "American" labels mislead when you read the scale?</h2>
+<p>Because the labels describe breeding purpose and look, while weight mostly reflects frame, sex and condition. Two dogs with the same pedigree type can differ by 20 lb, and a single dog can swing 10 lb with diet alone.</p>
+<p>The clearest way to see the difference in build is to watch the types side by side. In the video below, trainer Stonnie Dennis compares English show Labs (Daisy and Franklin) with an American field Lab (Walter) and a British field Lab (Remi), looking at build, drive and how each one trains:</p>
+<div style="position:relative;width:100%;aspect-ratio:16/9;margin:12px 0 20px"><iframe src="https://www.youtube-nocookie.com/embed/dWrH5H0OQ3w" loading="lazy" title="English Show vs Field Labrador Retriever: 5 Dog Comparison - Stonnie Dennis" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen></iframe></div>
+<h3>Height and bone versus weight</h3>
+<p>Show lines usually carry more bone and coat for their height, so they look bigger than the scale suggests. Field lines are often taller and longer in the leg, so a field dog can look lean at a weight that would be heavy on a compact show female. That is why comparing your dog's number to someone else's dog of the "same type" so often causes needless worry.</p>
+<h3>Energy and appetite</h3>
+<p>Owners commonly describe field-bred Labs as higher-energy and show-bred Labs as calmer, and a calmer dog on the same portion will usually gain more easily. That is an owner consensus rather than a measured result, so let your own dog's diary decide portions. Energy level also changes with age; see our owner data on <a href="/labrador-calm-down-age.html">when Labradors calm down</a>. If your field-line dog is obsessive about retrieving, our guide to building a <a href="/labrador-ball-obsession-off-switch.html">fetch off switch</a> keeps that energy useful rather than frantic.</p>
+
+<div style="border-left:4px solid #5b21b6;background:#f5f3ff;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;"><p style="margin:0;font-size:0.93rem;color:#4b5563;"><strong style="color:#5b21b6;">Lab Care Research Team</strong> — Reviewed for accuracy. We distinguish between established evidence and general owner consensus in our guides.</p></div>
+
+<h2>Step by step: track your Lab's weight like a serious owner</h2>
+<p>The owners whose dogs stay lean into old age are rarely the ones with the "right" pedigree type. They are the small group who weigh regularly and act early. Here is the routine.</p>
+<ol>
+<li><strong>Get a baseline on the same scale.</strong> Use the vet clinic scale or weigh yourself holding the dog on a bathroom scale and subtract your own weight. Always use the same method so readings are comparable.</li>
+<li><strong>Weigh puppies every two weeks, adults monthly.</strong> Write the date, age and weight in a notebook or phone note. A diary like the forum entries above is far more informative than a single number.</li>
+<li><strong>Do a rib and waist check at every weigh-in.</strong> You should be able to feel the ribs under a thin layer of fat without pressing hard, and see a waist from above. A number inside the AKC range can still hide a dog that is too heavy for its own frame.</li>
+<li><strong>Ask the breeder for the parents' adult weights.</strong> Ask what condition they were in when weighed. Parent size is the best predictor a puppy buyer has, and it matters more than whether the pedigree says "show" or "field".</li>
+<li><strong>Compare against your own dog's trend, not a chart.</strong> If an adult gains more than a couple of pounds over two months with no change in activity, trim portions by about 10% and recheck.</li>
+<li><strong>Recheck after neutering.</strong> The VetCompass data showed neutered males were recorded as overweight far more often than entire males, so watch the first months after surgery closely.</li>
+<li><strong>Adjust for the season and activity.</strong> A field-line Lab working through hunting season or swimming most days may need more food than in winter. Our guide on <a href="/teach-labrador-to-swim.html">teaching a Labrador to swim</a> covers one of the best low-impact ways to keep a heavier Lab fit.</li>
+</ol>
+
+<h2>Common mistakes when comparing English and American Lab weight</h2>
+<ul>
+<li><strong>Treating the AKC range as a target for every Lab.</strong> It describes show dogs in working condition. A small-framed female can be perfectly healthy below 55 lb.</li>
+<li><strong>Calling an overweight dog "English" or "big-boned".</strong> Heavy bone changes the outline, not the fat over the ribs. If you cannot feel ribs, the issue is condition, not pedigree.</li>
+<li><strong>Comparing 8-week weights between litters.</strong> The owner diaries above range from 2.6 to 7.25 kg at 8 weeks. Early size says more about the litter than about adult size.</li>
+<li><strong>Using one weigh-in to judge growth.</strong> Puppies grow in spurts. A two-week or monthly trend is what matters.</li>
+<li><strong>Assuming a field Lab is underweight because it looks lean.</strong> Leggy field dogs often look thin at a healthy weight. Check the ribs and spine before adding food.</li>
+<li><strong>Ignoring the sex difference.</strong> In the veterinary data, adult females averaged about 4.8 kg (roughly 10.5 lb) less than males. Comparing your female to a male of the "same type" will always make her look small.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How much should an English Labrador weigh?</summary><p>There is no separate published figure for English (show-bred) Labs. The UK breed standard gives heights only: 56 to 57 cm for dogs and 55 to 56 cm for bitches. Many show-bred Labs fall within the AKC working-condition range of 65 to 80 lb for males and 55 to 70 lb for females, but body condition matters more than the number.</p></details>
+<details><summary>Are American Labs bigger than English Labs?</summary><p>Field-bred ("American") Labs are often taller and leaner, while show-bred ("English") Labs are often shorter and heavier-boned. No study has weighed the two types side by side, and individual dogs overlap heavily, so a given field dog may weigh more or less than a given show dog.</p></details>
+<details><summary>How much does an adult male Labrador weigh compared with a female?</summary><p>In a UK veterinary study of 33,320 Labradors, adult males averaged 35.2 kg (about 77.6 lb) and adult females 30.4 kg (about 67.0 lb). The AKC standard gives approximately 65 to 80 lb for males and 55 to 70 lb for females in working condition.</p></details>
+<details><summary>At what age does a Labrador reach adult weight?</summary><p>Veterinary growth curves show Labrador puppies grow rapidly during their first year and then plateau, with males levelling off at a higher weight than females. The VetCompass study treated weights after 18 months as adult. One owner diary on The Labrador Forum shows a dog holding steady at 27.5 to 28 kg from 12 to 14 months.</p></details>
+<details><summary>How much should a Labrador puppy weigh at 8 weeks?</summary><p>Owner reports vary widely. On The Labrador Forum, 8-week weights ranged from 2.6 kg to 7.25 kg, with the heaviest a show-line male. A single 8-week weight is a poor predictor of adult size; the parents' adult weights tell you more.</p></details>
+<details><summary>Does neutering make a Labrador heavier?</summary><p>In the VetCompass data, 11.4% of neutered males were recorded as overweight or obese compared with 4.1% of entire males. In females the difference (12.5% versus 8.3%) was not statistically significant. Watching portions after neutering helps.</p></details>
+
+<h2>The bottom line on English vs American Labrador weight</h2>
+<p>The English vs American Labrador weight question has a less dramatic answer than the debate suggests. Show-bred Labs tend to be shorter and heavier-boned and field-bred Labs taller and leaner, but real records show the biggest weight gaps come from sex and condition: adult males averaged about 78 lb and females about 67 lb in a study of more than 33,000 dogs. Weigh on a schedule, keep a diary, check the ribs, and judge your Lab against its own trend and its parents rather than against a label.</p>
+
+<div class="ai-note" style="border-left:4px solid #5b21b6;background:#f7f9fa;padding:12px 16px;margin:24px 0;font-size:0.9rem;color:#4b5563"><strong>AI-assisted article &middot; Lab Care Research Team.</strong> Lab Care Research Team uses AI tools for source aggregation and first-draft outlines. All claims are reviewed by our editorial team against current breed health literature before publication. Owner-reported weights are individual examples, not a representative sample.</div>
+<script>
+(function(){
+ // owner diaries from thelabradorforum.com thread 5888: [weeks, kg]; months converted at 4.35 weeks
+ var M=4.35;
+ var diaries=[
+  {name:'Diary A',line:'',pts:[[8,6.5],[9,7.5],[10,9],[3*M,11],[4*M,17],[5*M,22],[6*M,25],[7*M,25],[8*M,27],[9*M,28],[11*M,28],[12*M,27.5],[13*M,28],[14*M,27.5]]},
+  {name:'Harvey',line:'',pts:[[8,3.5],[12,8.5],[15,13.5],[22,21],[27,24.8],[31,25.5]]},
+  {name:'Diary B',line:'',pts:[[8,3.8],[11,6],[20,16],[38,23.8]]},
+  {name:'Albert (show lines, male)',line:'show',pts:[[8,7.25],[14,13.6]]},
+  {name:'Buster (male)',line:'',pts:[[8,4.1],[14,9.1]]},
+  {name:'Pongo',line:'',pts:[[10,10],[22,20]]}
+ ];
+ var singles=[{name:'Shea (American field stock, female)',line:'field',w:12,kg:9},{name:'Penny',line:'',w:8,kg:2.6},{name:'Odin (working line, male)',line:'field',w:8,kg:7},{name:'Odin (working line, male)',line:'field',w:15*M,kg:31}];
+ // VetCompass adult means/SD in kg (dogs over 18 months)
+ var adult={m:{mean:35.2,sd:5.9,label:'adult males'},f:{mean:30.4,sd:5.2,label:'adult females'},u:{mean:33.0,sd:6.1,label:'all adult Labradors'}};
+ var akc={m:[65,80],f:[55,70]};
+ var LB=2.20462;
+ function interp(pts,w){
+  if(w<pts[0][0]||w>pts[pts.length-1][0])return null;
+  for(var i=0;i<pts.length-1;i++){var a=pts[i],b=pts[i+1];if(w>=a[0]&&w<=b[0]){return a[1]+(b[1]-a[1])*(w-a[0])/(b[0]-a[0]);}}
+  return pts[pts.length-1][1];
+ }
+ function add(area,tag,text){var el=document.createElement(tag);el.textContent=text;area.appendChild(el);return el;}
+ function fmt(kg){return kg.toFixed(1)+' kg ('+Math.round(kg*LB)+' lb)';}
+ function chart(weeks,kg){
+  var box=document.getElementById('lw-chart');box.textContent='';
+  var ns='http://www.w3.org/2000/svg',W=560,H=260,maxW=80,maxKg=45;
+  var svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.setAttribute('width','100%');svg.style.background='#fff';svg.style.borderRadius='8px';svg.style.marginTop='12px';
+  function x(w){return 40+(Math.min(w,maxW)/maxW)*(W-60);}
+  function y(k){return H-30-(Math.min(k,maxKg)/maxKg)*(H-50);}
+  function el(n,attrs){var e=document.createElementNS(ns,n);for(var k in attrs)e.setAttribute(k,attrs[k]);svg.appendChild(e);return e;}
+  el('line',{x1:40,y1:H-30,x2:W-20,y2:H-30,stroke:'#9ca3af'});el('line',{x1:40,y1:20,x2:40,y2:H-30,stroke:'#9ca3af'});
+  [0,20,40,60,80].forEach(function(w){var t=el('text',{x:x(w),y:H-12,'font-size':11,'text-anchor':'middle',fill:'#4b5563'});t.textContent=w+' wk';});
+  [0,15,30,45].forEach(function(k){var t=el('text',{x:34,y:y(k)+4,'font-size':11,'text-anchor':'end',fill:'#4b5563'});t.textContent=k+' kg';});
+  diaries.forEach(function(d){var s=d.pts.map(function(p){return x(p[0])+','+y(p[1]);}).join(' ');el('polyline',{points:s,fill:'none',stroke:d.line==='show'?'#c2410c':(d.line==='field'?'#0f766e':'#9ca3af'),'stroke-width':2});});
+  singles.forEach(function(s){el('circle',{cx:x(s.w),cy:y(s.kg),r:3,fill:s.line==='field'?'#0f766e':'#9ca3af'});});
+  el('circle',{cx:x(weeks),cy:y(kg),r:6,fill:'#5b21b6',stroke:'#fff','stroke-width':2});
+  var lg=el('text',{x:50,y:16,'font-size':11,fill:'#4b5563'});lg.textContent='Purple = your Lab · orange = show line · green = field/working line · grey = line not stated';
+  box.appendChild(svg);
+ }
+ var form=document.getElementById('lw-form');
+ form.addEventListener('submit',function(e){
+  e.preventDefault();
+  var area=document.getElementById('lw-result');area.textContent='';document.getElementById('lw-chart').textContent='';
+  var sex=document.getElementById('lw-sex').value,line=document.getElementById('lw-line').value;
+  var age=parseFloat(document.getElementById('lw-age').value),wt=parseFloat(document.getElementById('lw-wt').value);
+  if(!(age>0)||!(wt>0)){add(area,'p','Please enter an age and a weight above zero.');return;}
+  var unit=document.getElementById('lw-ageunit').value;
+  var weeks=unit==='w'?age:(unit==='m'?age*M:age*52.18);
+  var kg=document.getElementById('lw-wtunit').value==='kg'?wt:wt/LB;
+  if(weeks<6){add(area,'p','Under 6 weeks the owner diaries have no data. Ask the breeder for litter weights.');return;}
+  add(area,'h3','Your Lab: '+fmt(kg)+' at about '+Math.round(weeks)+' weeks');
+  if(weeks<78){
+   var vals=[];
+   diaries.forEach(function(d){var v=interp(d.pts,weeks);if(v!==null)vals.push({n:d.name,v:v});});
+   singles.forEach(function(s){if(Math.abs(s.w-weeks)<=2)vals.push({n:s.name,v:s.kg});});
+   if(vals.length<2){
+    add(area,'p',(vals.length?'Only one owner-reported dog covers':'No owner diary covers')+' this age, so a fair comparison is not possible. Track the trend every two weeks and compare with the parents\' adult weights.');
+    if(weeks>=52){var ref=adult[sex];add(area,'p','For reference, VetCompass recorded '+fmt(ref.mean)+' as the average for '+ref.label+' over 18 months.');}
+   } else {
+    var lo=Math.min.apply(null,vals.map(function(o){return o.v;})),hi=Math.max.apply(null,vals.map(function(o){return o.v;}));
+    add(area,'p',vals.length+' owner-reported dogs cover this age, ranging from '+fmt(lo)+' to '+fmt(hi)+'.');
+    var out=kg<lo-0.2||kg>hi+0.2;var pos=kg<lo-0.2?'below every':(kg>hi+0.2?'above every':'inside the range of the');
+    add(area,'p','Your Lab is '+pos+' owner-reported dog'+(out?'':'s')+' at this age. '+(out?'That is not a diagnosis, but it is worth a rib and waist check and a word with your vet at the next visit.':'That is reassuring, but steady growth over several weigh-ins matters more than one reading.'));
+    var ul=document.createElement('ul');vals.forEach(function(o){add(ul,'li',o.n+': about '+fmt(o.v));});area.appendChild(ul);
+   }
+  } else {
+   var a=adult[sex];var z=(kg-a.mean)/a.sd;
+   add(area,'p','VetCompass average for '+a.label+': '+fmt(a.mean)+'. Your Lab is '+Math.abs(kg-a.mean).toFixed(1)+' kg '+(kg>=a.mean?'above':'below')+' that, about '+Math.abs(z).toFixed(1)+' standard deviations.');
+   if(sex!=='u'){var r=akc[sex],lb=kg*LB;add(area,'p','AKC working-condition range for '+(sex==='m'?'dogs':'bitches')+': '+r[0]+' to '+r[1]+' lb. Your Lab is '+(lb<r[0]?'below':(lb>r[1]?'above':'inside'))+' it.');}
+   add(area,'p',Math.abs(z)<=1?'Within one standard deviation of the average: a common weight for the breed. Confirm with a rib check.':Math.abs(z)>2?'More than two standard deviations from the average. Few Labs in the clinic records sit this far out, so book a body-condition check with your vet.':'More than one standard deviation from the average. Many healthy Labs sit here, especially very small or very tall frames, but check body condition and talk to your vet if the ribs are hard to feel or easy to see.');
+  }
+  add(area,'p',line==='show'?'Show-bred Labs often carry more bone for their height, so judge by ribs and waist, not by the number alone.':(line==='field'?'Field-bred Labs often look lean at a healthy weight; feel for the ribs before adding food.':'Line type is a hint about shape, not weight. Your own dog\'s trend and the parents\' adult weights tell you more.'));
+  chart(weeks,kg);
+ });
+ form.addEventListener('reset',function(){document.getElementById('lw-result').textContent='Your comparison will appear here.';document.getElementById('lw-chart').textContent='';});
+})();
+</script></article>
+
+  <aside class="sidebar" data-follow-sidebar="existing"><section class="sidebar-panel"><h3>Adult averages</h3><p>VetCompass: males 35.2 kg (77.6 lb), females 30.4 kg (67.0 lb).</p></section><section class="sidebar-panel"><h3>Best size predictor</h3><p>The parents\' adult weights in fit condition, not the show or field label.</p></section><section class="sidebar-panel"><h3>More Labrador guides</h3><ul><li><a href="/how-much-feed-labrador.html">How Much to Feed a Labrador</a></li><li><a href="/labrador-calm-down-age.html">When Do Labradors Calm Down?</a></li></ul></section></aside>
+</div>
+
+
+<script>
+(function() {
+  var _ga4 = "";
+  var _site = "labrador-retriever-care.github.io";
+  var _article = "english-vs-american-labrador-weight";
+  var _startTime = Date.now();
+  var _scrollMarks = {25: false, 50: false, 75: false, 100: false};
+
+  function _send(name, params) {
+    var data = Object.assign({page: _article, site: _site}, params);
+    if (_ga4 && typeof gtag === "function") {
+      gtag("event", name, data);
+    }
+    try {
+      var log = JSON.parse(localStorage.getItem("_ptrack") || "[]");
+      log.push({t: new Date().toISOString(), e: name, d: data});
+      if (log.length > 200) log = log.slice(-200);
+      localStorage.setItem("_ptrack", JSON.stringify(log));
+    } catch(e) {}
+  }
+
+  function _onScroll() {
+    var scrolled = window.scrollY + window.innerHeight;
+    var total = document.documentElement.scrollHeight;
+    var pct = Math.round((scrolled / total) * 100);
+    [25, 50, 75, 100].forEach(function(mark) {
+      if (!_scrollMarks[mark] && pct >= mark) {
+        _scrollMarks[mark] = true;
+        _send("scroll_depth", {depth: mark});
+      }
+    });
+  }
+  window.addEventListener("scroll", _onScroll, {passive: true});
+
+  function _sendTime() {
+    var secs = Math.round((Date.now() - _startTime) / 1000);
+    _send("time_on_page", {seconds: secs});
+  }
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) _sendTime();
+  });
+  window.addEventListener("pagehide", _sendTime);
+
+  document.addEventListener("click", function(e) {
+    var btn = e.target.closest("button");
+    if (btn) {
+      var box = btn.closest(".sidebar-newsletter, [class*='newsletter']");
+      if (box) _send("newsletter_click", {label: btn.textContent.trim().slice(0, 40)});
+    }
+    var link = e.target.closest("a[href]");
+    if (link && !link.href.includes(window.location.hostname)) {
+      _send("outbound_click", {url: link.href.slice(0, 100)});
+    }
+  });
+
+  _send("article_view", {});
+})();
+</script>
+
+<script src="/assets/router.js" defer></script>
+
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-inner">
+    <div><a class="brand" href="/">Labrador Retriever Care</a><p>Practical, evidence-based guides for Labrador Retriever owners on care, training, behavior and everyday life. Written with AI assistance, checked by a person before publication. Not a veterinary clinic.</p><p>&copy; 2026 Labrador Retriever Care</p></div>
+    <nav class="sc-footer-nav" aria-label="Footer"><a href="/blog.html">All guides</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial policy</a><a href="/disclosure.html">Disclosure</a><a href="/privacy.html">Privacy</a><a href="/sitemap.html">Sitemap</a></nav>
+  </div>
+</footer>
+</body>
+</html>
